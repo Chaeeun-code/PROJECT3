@@ -1,0 +1,43 @@
+server:
+  port: 8443 # API Gateway 포트 설정
+  ssl:
+    enabled: true
+    key-store: classpath:keystore.p12
+    key-store-password: password123
+    key-store-type: PKCS12
+    key-alias: mylocalcert
+
+auth:
+  server:
+    url: https://localhost:8030
+
+spring:
+  main:
+    web-application-type: reactive
+  cloud:
+    gateway:
+      httpclient:
+         ssl:
+          use-insecure-trust-manager: true
+         responseTimeout: 50000
+      routes:
+        - id: frontend
+          uri: https://localhost:8080  # 프론트엔드 서버 주소
+          predicates:
+            - Path=/** # 기본 경로에 대해 모든 요청을 프론트엔드로 라우팅
+          filters:
+            - AddResponseHeader=Access-Control-Allow-Origin, "https://localhost:8080"
+
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "https://localhost:8080"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+            allowedHeaders:
+              - "*"
+            allowCredentials: true
+

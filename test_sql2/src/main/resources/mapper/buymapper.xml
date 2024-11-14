@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sboot.kaja.dao.BuyDAO">
+
+    <!-- 주문 이력 조회 (customer_id를 기준으로) -->
+    <select id="findByCustomerId" parameterType="String" resultType="com.sboot.kaja.vo.BuyVO">
+        SELECT 
+            customer_id AS customerId, 
+            company_id AS companyId, 
+            thing_id AS thingId, 
+            num, 
+            price, 
+            date_
+        FROM buy 
+        WHERE customer_id = #{customerId}
+    </select>
+
+</mapper>

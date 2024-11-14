@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.sboot.kaja.dao.SawonDAO">
+
+
+<resultMap id="creditTransactionResultMap" type="com.sboot.kaja.vo.CreditSearchVO">
+    <result column="CUSTOMER_ID" property="customerId"/>
+    <result column="USED_CREDITS" property="usedCredits"/>
+    <result column="TRANSACTION_TYPE" property="transactionType"/>
+    <result column="DESCRIPTION" property="description"/>
+    <result column="TRANSACTION_DATE" property="transactionDate"/>
+</resultMap>
+
+    <!-- 특정 ID로 정보를 조회하는 메서드 -->
+    <select id="getInfo" parameterType="String" resultType="com.sboot.kaja.vo.SawonVO">
+    SELECT c.customer_id AS id, cr.credit
+    FROM customer c
+    LEFT JOIN credit cr ON c.customer_id = cr.customer_id
+    WHERE c.customer_id = #{id}
+	</select>
+
+ 
+    
+    <select id="getId" parameterType="String" resultType="java.lang.String">
+        SELECT customer_id FROM customer 
+        WHERE customer_id = #{id}
+    </select>
+
+    <!-- 특정 ID로 ID와 크레딧만 조회하는 메서드 -->
+    <select id="getInfoById" parameterType="String" resultType="com.sboot.kaja.vo.SawonVO">
+        SELECT customer_id, credit FROM credit WHERE customer_id = #{id}
+    </select>
+
+    <!-- 특정 ID로 크레딧만 조회하는 메서드 (getCreditById) -->
+    <select id="getCreditById" parameterType="String" resultType="int">
+        SELECT credit 
+        FROM credit 
+        WHERE customer_id = #{id}
+    </select>
+    
+    <update id="updateCredit" parameterType="map">
+    UPDATE credit
+    SET credit = #{credit}
+    WHERE customer_id = #{id}
+	</update>
+
+
+
+<insert id="insertCreditTransaction" parameterType="com.sboot.kaja.vo.CreditSearchVO">
+    INSERT INTO credit_transaction (customer_id, used_credits, transaction_type, description, transaction_date)
+    VALUES (#{customerId}, #{usedCredits}, #{transactionType}, #{description}, #{transactionDate})
+</insert>
+
+<insert id="insertCredit" parameterType="com.sboot.kaja.vo.CreditTransactionVO">
+    INSERT INTO credit_transaction (customer_id, used_credits, transaction_date)
+    VALUES (#{customerId}, #{usedCredits}, #{transactionDate})
+</insert>
+
+<select id="getAllTransactions" resultType="com.sboot.kaja.vo.CreditTransactionVO">
+    SELECT customer_id AS customerId, 
+           used_credits AS usedCredits, 
+           transaction_type AS transactionType,
+           description, 
+           transaction_date AS transactionDate
+    FROM credit_transaction
+</select>
+
+<select id="getTransactionsWithFilters" resultMap="creditTransactionResultMap">
+    SELECT ct.*
+    FROM credit_transaction ct
+    JOIN customer c ON ct.customer_id = c.customer_id
+    WHERE 1=1
+    <if test="filters.startDate != null">
+        AND ct.transaction_date &gt;= #{filters.startDate}
+    </if>
+    <if test="filters.endDate != null">
+        AND ct.transaction_date &lt;= #{filters.endDate}
+    </if>
+   <if test="filters.userId != null and filters.userId != ''">
+        AND ct.customer_id = #{filters.userId}
+    </if>
+</select>
+
+<insert id="cancelinput" parameterType="com.sboot.kaja.vo.CreditTransactionVO">
+    INSERT INTO cancel (customer_id, transaction_date, used_credits)
+    VALUES (#{customerId}, #{transactionDate}, #{usedCredits})
+</insert>
+
+<delete id="deletecancel" parameterType="com.sboot.kaja.vo.CreditTransactionVO">
+DELETE FROM credit_transaction
+WHERE customer_id = #{customerId} 
+  AND TO_CHAR(transaction_date, 'YYYY-MM-DD HH24:MI:SS.FF2') = TO_CHAR(#{transactionDate}, 'YYYY-MM-DD HH24:MI:SS.FF2')
+
+</delete>
+
+
+<select id="getAllcancelTransactions" resultType="com.sboot.kaja.vo.CreditTransactionVO">
+    SELECT customer_id AS customerId, 
+           used_credits AS usedCredits, 
+           transaction_date AS transactionDate
+    FROM cancel
+</select>
+
+<delete id="deletecredit" parameterType="com.sboot.kaja.vo.CreditTransactionVO">
+DELETE FROM cancel
+WHERE customer_id = #{customerId} 
+  AND TO_CHAR(transaction_date, 'YYYY-MM-DD HH24:MI:SS.FF2') = TO_CHAR(#{transactionDate}, 'YYYY-MM-DD HH24:MI:SS.FF2')
+
+</delete>
+
+<select id="getTransactionscancel" resultMap="creditTransactionResultMap">
+    SELECT *
+    FROM cancel ct
+    JOIN customer c ON ct.customer_id = c.customer_id
+    WHERE 1=1
+    <if test="filters1 != null and filters1.startDate != null">
+        AND ct.transaction_date &gt;= #{filters1.startDate}
+    </if>
+    <if test="filters1 != null and filters1.endDate != null">
+        AND ct.transaction_date &lt;= #{filters1.endDate}
+    </if>
+    <if test="filters1 != null and filters1.userId != null and filters1.userId != ''">
+        AND ct.customer_id = #{filters1.userId}
+    </if>
+</select>
+
+<!-- 비관적 잠금을 사용하는 메서드 -->
+    <select id="getCreditForUpdate" parameterType="String" resultType="com.sboot.kaja.vo.SawonVO">
+        SELECT * FROM credit WHERE customer_id = #{id} FOR UPDATE
+    </select>
+
+
+
+</mapper>

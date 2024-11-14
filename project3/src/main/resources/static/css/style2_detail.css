@@ -1,0 +1,185 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-top: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing: border-box;
+	height: 50px;
+}
+
+/* 네비게이션 링크 스타일 */
+.navbar .nav-links {
+    flex-grow: 1; /* 중앙 정렬을 위해 공간 차지 */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 화면이 좁아질 때 링크들이 줄바꿈 되도록 설정 */
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #000000;
+    font-size: 16px;
+}
+
+/* 인증 버튼 스타일 */
+.navbar .auth-buttons {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0; /* 화면이 좁아져도 인증 버튼이 잘리지 않도록 설정 */
+}
+
+.navbar .auth-buttons button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    white-space: nowrap; /* 버튼 텍스트가 줄바꿈되지 않도록 설정 */
+}
+
+.logo img {
+    width: 200px; /* Adjust the width as needed */
+    height: 140; /* Maintains the aspect ratio */
+}
+
+/*---------------------------------------------------------*/
+
+.container {
+    display: flex; /* Flexbox 사용하여 가로 방향으로 정렬 */
+   justify-content: center;
+   align-items: center;
+   gap: 50px;  /*두 섹션 간의 간격 */
+   flex-wrap: wrap;
+   min-height: 600px;
+}
+
+.product-image {
+    margin-right: 20px;
+    justify-content: center;
+}
+   
+
+
+.product-info {
+    max-width: 400px; /* 텍스트 영역 최대 너비 설정 */
+}
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.button-group {
+    margin-top: 20px; /* 버튼 그룹의 상단 간격 */
+}
+.btn-cart, .btn-buy{
+   padding:10px 20px;
+   font-size:16px;
+   cursor:pointer;
+   border: none;
+}
+.btn-cart{
+   background-color:white;
+   border: 1px solid black;
+}
+
+.btn-buy{
+   background-color:black;
+   color:white;
+}
+
+.footer{
+   display: flex;
+   justify-content: space-around; /* 항목 사이에 동일한 간격을 줌 */
+   align-items: center; /* 항목을 수직으로 중앙 정렬 */
+   width: 100%;
+   flex-wrap: wrap;
+   
+}
+
+.footer button{
+   background-color:transparent;
+   border: none;
+}
+
+
+.line {
+    border: none;        /* 기본 경계 제거 */
+    height: 2px;        /* 줄의 두께 */
+    background-color: rgb(121, 224, 238); /* 줄의 색상 */
+   width:100%;
+   
+}
+
+
+/*------------------------------------------------------------------------------*/
+
+
+
+/*모달 팝업 영역 스타일링*/
+.modal {
+/*팝업 배경*/
+	display: none; /*평소에는 보이지 않도록*/
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: rgba(0,0,0,0.5);
+}
+.modal .modal_popup {
+/*팝업*/
+	display: flex;
+    position: absolute;
+	flex-direction: column; /* 팝업 내부에서 요소를 수직으로 배치 */
+	align-items: center; /* 가운데 정렬 */
+	justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.modal .modal_popup .button-group {
+    display: flex; /* 버튼을 가로로 나열 */
+    gap: 10px; /* 버튼 사이에 10px 간격 */
+    justify-content: center; /* 버튼을 가운데 정렬 */
+}
+
+.modal .modal_popup .close_btn{
+    padding: 10px 20px;
+    background-color: rgb(0,0,0);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+
+.modal .modal_popup .gocart{
+    padding: 10px 20px;
+    background-color: rgb(0,0,0);
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: box-shadow 0.2s;
+}
+

@@ -1,0 +1,62 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing: border-box;
+	height: 50px;
+}
+
+/* 네비게이션 링크 스타일 */
+.navbar .nav-links {
+    flex-grow: 1; /* 중앙 정렬을 위해 공간 차지 */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 화면이 좁아질 때 링크들이 줄바꿈 되도록 설정 */
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    margin: 0 10px;
+    color: #000000;
+    font-size: 16px;
+}
+
+/* 인증 버튼 스타일 */
+.navbar .auth-buttons {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0; /* 화면이 좁아져도 인증 버튼이 잘리지 않도록 설정 */
+}
+
+.navbar .auth-buttons button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    white-space: nowrap; /* 버튼 텍스트가 줄바꿈되지 않도록 설정 */
+}
+
+.logo img {
+    width: 200px; /* Adjust the width as needed */
+    height: 140; /* Maintains the aspect ratio */
+}
+		
+/* 미디어 쿼리: 화면 크기에 따라 레이아웃 조정 */
+@media (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+    }
+    
+    .navbar .auth-buttons {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+}

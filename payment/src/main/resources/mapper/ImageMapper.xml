@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- <mapper namespace="mapper.mybatismapper"> -->
+<mapper namespace="com.sboot.sijak.last_payment.mapper.creditMapper">
+
+	<delete id="deletecart">
+		DELETE FROM cart
+		WHERE customer_id = #{customer_id} AND thing_id = #{thing_id}
+	</delete>
+	
+	<insert id="insertbuy" parameterType="com.sboot.sijak.last_payment.Vo.PaymentVo">
+	    INSERT INTO buy (transaction_id, customer_id, thing_id, num)
+	    VALUES (#{transaction_id}, #{customer_id}, #{thing_id}, #{num})
+	</insert>
+	
+	<select id="getcredit" parameterType="com.sboot.sijak.last_payment.Vo.PaymentVo">
+		SELECT credit 
+	    FROM credit 
+	    WHERE customer_id = #{customer_id}
+	</select>
+	
+	<update id="updateCredit" parameterType="com.sboot.sijak.last_payment.Vo.PaymentVo">
+	    UPDATE credit
+	    SET credit = #{updatedCredit}
+	    WHERE customer_id = #{customer_id}
+	</update>
+
+
+	<insert id="insertCreditTransaction" parameterType="com.sboot.sijak.last_payment.Vo.PaymentVo">
+	    INSERT INTO credit_transaction (customer_id, used_credits, transaction_type, description)
+	    VALUES (#{customer_id}, #{updatedCredit}, #{string}, #{string2})
+	</insert>
+</mapper>

@@ -1,0 +1,358 @@
+@font-face {
+    font-family: 'SnowflakeFont'; /* SMUSnowflake-Bold.ttf 폰트 */
+    src: url('/font/SMUSnowflake-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunnu'; 
+     src: url('https://res.cloudinary.com/dhuybxduy/raw/upload/v1731058096/NoonnuBasicGothicRegular_mh9o3w.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SB_B'; 
+     src: url('https://res.cloudinary.com/dhuybxduy/raw/upload/v1730868512/SB_B_swtpiq.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SB_L'; 
+    src: url('https://res.cloudinary.com/dhuybxduy/raw/upload/v1730868513/SB_L_bdvrte.ttf') format('truetype');
+    font-style: normal;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    padding-top: 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing: border-box;
+	height: 50px;
+}
+
+/* 네비게이션 링크 스타일 */
+.navbar .nav-links {
+    flex-grow: 1; /* 중앙 정렬을 위해 공간 차지 */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 화면이 좁아질 때 링크들이 줄바꿈 되도록 설정 */
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'nunnu', sans-serif; /* go_L 폰트 적용 */
+
+}
+
+/* 인증 버튼 스타일 */
+.navbar .auth-buttons {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0; /* 화면이 좁아져도 인증 버튼이 잘리지 않도록 설정 */
+}
+
+.navbar .auth-buttons button {
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'nunnu', sans-serif; /* go_L 폰트 적용 */
+    cursor: pointer;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    white-space: nowrap; /* 버튼 텍스트가 줄바꿈되지 않도록 설정 */
+}
+
+.logo img {
+    width: 200px; /* Adjust the width as needed */
+    height: 140; /* Maintains the aspect ratio */
+}
+
+
+
+.main-banner {
+    padding: 0;
+    position: relative; /* 배너 내부에 텍스트와 버튼을 배치할 수 있도록 함 */
+    background-size: cover;
+    background-position: center;
+    margin-top: 50px;
+	display: flex; /* Flexbox 사용 */
+	justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 700px; /* 배너의 최소 높이를 명시적으로 설정 */
+}
+
+.swiper-container {
+    width: 100%;
+    height: 500px; /* 배너의 높이를 명시적으로 설정 */
+}
+
+.swiper-slide {
+    height: 100%; /* 슬라이드가 컨테이너 전체 높이를 차지 */
+}
+
+/* 첫 번째 배너 슬라이드 */
+.swiper-slide-1 {
+    background-image: url('/grim/paper.jpg');
+    background-size: 100%;
+    background-position: center;
+	height: 100%;
+}
+
+
+
+
+
+/* 두 번째 배너 슬라이드 */
+.swiper-slide-2 {
+    background-image: url('https://res.cloudinary.com/dhuybxduy/image/upload/v1730888207/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-002_f3qotm.png');
+    background-size: 100%;
+    background-position: center;
+	background-repeat: no-repeat;
+	height: 100%;
+}
+
+/* 세 번째 배너 슬라이드 */
+.swiper-slide-3 {
+    background-image: url('https://res.cloudinary.com/dhuybxduy/image/upload/v1730886527/%EC%A0%9C%EB%AA%A9%EC%9D%84-%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94_-001_2_hszydz.png');
+	background-size: 100%;
+	background-position: center;
+	height: 100%;
+}
+
+.swiper-button-next, .swiper-button-prev {
+    fill: black; /* 만약 화살표가 SVG일 경우 */
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+    color: black; /* 화살표 아이콘이 기본적으로 after 요소에 포함되어 있을 수 있음 */
+    font-size: 20px; /* 화살표 크기 조정 */
+}
+
+.swiper-button-next {
+    right: 10px; /* 배너 오른쪽에 화살표 위치 */
+}
+
+.swiper-button-prev {
+    left: 10px; /* 배너 왼쪽에 화살표 위치 */
+}
+
+
+.banner-text {
+     /* 텍스트를 세로 가운데로 이동 */
+    padding-left: 300px;
+	padding-top: 300px;
+    color: white;
+    text-align: left;
+    width: 80%;
+    box-sizing: border-box;
+    white-space: normal;
+    z-index: 2;
+}
+
+.main-banner h1 {
+    font-size: 50px;
+    margin: 0;
+    font-family: "SnowflakeFont", Arial, sans-serif; 
+}
+
+.main-banner p {
+    font-size: 20px;
+}
+
+.main-banner .btn {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+
+/* 전체 제품 섹션을 가로로 정렬하는 스타일 추가 */
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* 줄바꿈 허용 */
+    margin-top: 20px;
+    padding: 0 10px; /* 좌우에 여백 추가 */
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.best-product {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.best-product h2 {
+    font-size: 30px;
+}
+
+.product {
+	width: 400px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img {
+    width: 100px; 
+	height: 300px;
+   
+}
+
+/* 반응형 설정 - 데스크탑 (화면 너비가 1025px 이상일 때) */
+@media (min-width: 1025px) {
+    .product {
+        flex-basis: calc(20% - 20px); /* 한 줄에 5개의 제품을 배치 */
+        margin: 6px; /* 각 제품에 좌우 5px 마진을 추가 */
+    }
+
+    .product img {
+        width: 100%; /* 이미지를 컨테이너 너비에 맞게 */
+    }
+}
+
+/* 반응형 설정 - 태블릿 (화면 너비가 769px 이상, 1024px 이하일 때) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .product {
+        flex-basis: calc(33.33% - 20px); /* 한 줄에 3개의 제품을 배치 */
+        margin: 0 10px; /* 각 제품에 좌우 10px 마진 */
+    }
+
+    .best-product h2 {
+        font-size: 26px; /* 태블릿에서 제목 크기 조정 */
+    }
+    
+    .product img {
+    	width: 100%;
+    }
+    
+     /* 마지막 줄에서 2개만 있을 때 가운데 정렬 */
+    .product-grid {
+        justify-content: center; /* 마지막 줄을 가운데 정렬 */
+    }
+    
+     .main-banner {
+        padding: 80px 0; /* 태블릿에서 배너의 패딩 줄이기 */
+        min-height: 400px; /* 태블릿에서 배너의 최소 높이 줄이기 */
+    }
+
+    .main-banner h1 {
+        font-size: 40px; /* 태블릿에서 제목 크기 줄이기 */
+    }
+
+    .main-banner p {
+        font-size: 18px; /* 태블릿에서 문구 크기 조정 */
+    }
+
+    .banner-text {
+        padding-left: 20px; /* 태블릿에서 텍스트 좌우 패딩 줄이기 */
+    }
+}
+
+/* 전체 그리드 설정 */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;  /* 여러 줄로 나타날 수 있게 설정 */
+  gap: 20px;        /* 각 제품 간의 간격 */
+  justify-content: space-around; /* 각 제품을 화면에 고르게 배치 */
+}
+
+/* 개별 제품 항목 스타일 */
+.product-item {
+  border: 1px solid #ccc;   /* 테두리 추가 */
+  padding: 20px;            /* 내부 여백 */
+  width: 200px;             /* 아이템 박스 크기 */
+  text-align: center;       /* 텍스트 중앙 정렬 */
+  background-color: #f9f9f9; /* 배경색 */
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 */
+  transition: transform 0.3s; /* 마우스를 올릴 때 크기 변화 효과 */
+}
+
+.product-item:hover {
+  transform: scale(1.05); /* 마우스 호버 시 아이템 약간 확대 */
+}
+
+/* 상품 이름 스타일 */
+.product-item h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* 가격 텍스트 스타일 */
+.product-item p {
+  font-size: 1em;
+  font-weight: bold;
+  color: #f57c00;
+}
+
+/* 이미지 스타일 */
+.product-item img {
+  width: 100%;  /* 이미지가 컨테이너 크기에 맞게 */
+  height: auto;
+  margin-bottom: 10px; /* 이미지 아래 간격 */
+}
+
+/* 반응형 설정 - 모바일 (화면 너비가 768px 이하일 때) */
+@media (max-width: 768px) {
+    .product {
+        flex-basis: calc(50% - 20px); /* 한 줄에 2개의 제품을 배치 */
+        margin-bottom: 20px; /* 각 제품 사이의 간격 추가 */
+    }
+    
+    .product img {
+    	width: 100%;
+    }
+
+    .best-product h2 {
+        font-size: 24px; /* 작은 화면에서 제목 크기 조정 */
+    }
+     .main-banner {
+        padding: 50px 0; /* 모바일에서 배너의 패딩 줄이기 */
+        min-height: 300px; /* 모바일에서 배너의 최소 높이 줄이기 */
+    }
+
+    .main-banner h1 {
+        font-size: 30px; /* 모바일에서 제목 크기 줄이기 */
+    }
+
+    .main-banner p {
+        font-size: 16px; /* 모바일에서 문구 크기 줄이기 */
+    }
+
+    .banner-text {
+        padding-left: 10px; /* 모바일에서 텍스트 좌우 패딩 줄이기 */
+    }
+}
