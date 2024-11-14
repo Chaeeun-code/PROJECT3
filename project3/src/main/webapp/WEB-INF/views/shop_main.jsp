@@ -20,7 +20,7 @@
 		        </div>
 		        <div class="nav-links">
 		            <a href="${pageContext.request.contextPath}/campaign_main">참여활동</a>
-		            <a href="#">회사소소개2</a>
+		            <a href="#">회사소소개3</a>
 		            <a href="${pageContext.request.contextPath}/shop_main">eco 쇼핑</a>
 		            <a href="#">참여뱅뱅법</a>
 		        </div>
