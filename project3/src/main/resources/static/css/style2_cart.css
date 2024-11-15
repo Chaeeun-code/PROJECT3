@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'nunnu'; 
+     src: url('https://res.cloudinary.com/dhuybxduy/raw/upload/v1731058096/NoonnuBasicGothicRegular_mh9o3w.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SB_B'; 
+     src: url('https://res.cloudinary.com/dhuybxduy/raw/upload/v1730868512/SB_B_swtpiq.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SB_L'; 
+    src: url('https://res.cloudinary.com/dhuybxduy/raw/upload/v1730868513/SB_L_bdvrte.ttf') format('truetype');
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 255, 255);
+    padding-top: 55px;
+}
+
+/*-------------------------------------------------------------*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing: border-box;
+	height: 50px;
+}
+
+/* 네비게이션 링크 스타일 */
+.navbar .nav-links {
+    flex-grow: 1; /* 중앙 정렬을 위해 공간 차지 */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 화면이 좁아질 때 링크들이 줄바꿈 되도록 설정 */
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'nunnu', sans-serif; /* go_L 폰트 적용 */
+
+}
+
+/* 인증 버튼 스타일 */
+.navbar .auth-buttons {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0; /* 화면이 좁아져도 인증 버튼이 잘리지 않도록 설정 */
+}
+
+.navbar .auth-buttons button {
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'nunnu', sans-serif; /* go_L 폰트 적용 */
+    cursor: pointer;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    white-space: nowrap; /* 버튼 텍스트가 줄바꿈되지 않도록 설정 */
+}
+
+.logo img {
+    width: 200px; /* Adjust the width as needed */
+    height: 140; /* Maintains the aspect ratio */
+}
+
+/*----------------------------------------------------------------------------------------------------*/
+.me{
+	width: 100%; 
+	background-color: #dae8fc;
+	
+}
+.me-content{
+	padding-top: 70px;
+	width:80%;
+	margin: 0 auto;
+	font-family: 'SB_L';
+}
+
+.cart-container {
+    width: 80%; /* 페이지 너비를 조절 */
+    margin: 0 auto; /* 가운데 정렬 */
+    padding: 0; /* 컨테이너 내부 여백 제거 */
+}
+
+
+h1 {
+	font-family: 'nunnu';
+    font-size: 30px;
+    margin: 20px;
+    color: #333333;
+    font-weight: bold;
+}
+
+
+.select-all {
+	font-family: 'nunnu';
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #dce6f9; 
+    font-weight: bold;
+    color: #333333;
+}
+
+.select-all input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.select-all label {
+    margin-left: 5px;
+}
+
+.deselect {
+    margin-left: auto;
+    color: #666666;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.cart-item {
+	font-family: 'nunnu';
+    display: flex;
+    align-items: flex-start;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.item-info {
+    display: flex;
+    align-items: flex-start;
+    flex-grow: 1;
+}
+
+.item-image {
+    width: 120px;
+    height: 120px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+
+.item-details {
+    flex-grow: 1;
+}
+
+.item-name {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 5px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 5px;
+}
+
+.item-type, .item-price {
+    color: #666666;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.item-quantity {
+	font-family: 'nunnu';
+    display: flex;
+    align-items: center;
+}
+
+.decrease-btn, .increase-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+
+#buy {
+	font-family: 'nunnu';
+    background-color: #333333;
+    color: #ffffff;
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    text-align: center;
+    border-radius: 5px;
+	
+}
+
+#buy:hover {
+    background-color: rgb(0, 0, 0);
+}
+
+.delete-btn {
+	font-family: 'SB_L';
+    background-color: rgb(241, 71, 71);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background-color: rgb(204, 0, 0);
+}
+
+#delete-select {
+	font-family: 'SB_L';
+	background-color: rgb(192, 192, 192);
+	color: white;
+	border: none;
+	padding: 5px 10px;
+	cursor: pointer;
+	float: right;
+	margin-right: 20px;
+	margin-top: -10px;
+}
+
+#delete-select:hover {
+    background-color: rgb(120, 120, 120);
+}
+
+#selectAll, .item-checkbox{
+    accent-color: gray; /* 체크되었을 때의 색상을 회색으로 설정 */
+}
+
+.decrease-btn,
+.increase-btn {
+	background-color: transparent;
+	color: #333;
+    margin: 0 5px; /* 버튼과 숫자 사이의 간격을 5px로 설정 */
+}	
+.decrease-btn:hover,
+.increase-btn:hover {
+    background-color: #ddd; /* 마우스가 다가가면 진한 색으로 변경 */
+}
+.quantity {
+	    margin: 0 10px; /* 숫자와 버튼 사이의 간격을 10px로 설정 */
+	}

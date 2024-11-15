@@ -1,0 +1,1110 @@
+!SESSION 2024-11-15 09:22:01.259 -----------------------------------------------
+eclipse.buildId=4.25.0.202409101855
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-15 09:22:09.761
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-15 09:24:52.684
+!MESSAGE Logback config file: C:\Users\user\Desktop\1115\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-11-15 09:24:54.517
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-11-15 09:24:54.517
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-11-15 09:24:55.359
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-11-15 09:24:55.359
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-11-15 09:25:06.237
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:36.624
+!MESSAGE Classpath changed for project: APIgateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:36.625
+!MESSAGE Classpath changed for project: JWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:36.626
+!MESSAGE Classpath changed for project: payment
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:36.627
+!MESSAGE Classpath changed for project: project3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:36.628
+!MESSAGE Classpath changed for project: test_campaign
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:36.628
+!MESSAGE Classpath changed for project: test_chart
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:36.629
+!MESSAGE Classpath changed for project: test_eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:36.630
+!MESSAGE Classpath changed for project: test_shop-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:36.631
+!MESSAGE Classpath changed for project: test_sql2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:36.631
+!MESSAGE Classpath changed for project: test_thing
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:36.632
+!MESSAGE Classpath changed for project: test_thing2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:37.862
+!MESSAGE Classpath changed for project: APIgateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:37.863
+!MESSAGE Classpath changed for project: JWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:37.864
+!MESSAGE Classpath changed for project: payment
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:37.865
+!MESSAGE Classpath changed for project: project3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:37.866
+!MESSAGE Classpath changed for project: test_campaign
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:37.868
+!MESSAGE Classpath changed for project: test_chart
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:37.869
+!MESSAGE Classpath changed for project: test_eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:37.870
+!MESSAGE Classpath changed for project: test_shop-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:37.871
+!MESSAGE Classpath changed for project: test_sql2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:37.872
+!MESSAGE Classpath changed for project: test_thing
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:25:37.873
+!MESSAGE Classpath changed for project: test_thing2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:26:16.458
+!MESSAGE Classpath changed for project: APIgateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:26:16.478
+!MESSAGE Boot project ADDED: APIgateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:26:16.479
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:26:16.523
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-15 09:26:16.584
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\Myspring2\sts-4.25.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/Users/user/Desktop/1115/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1731630376583
+-Dlanguageserver.hover-timeout=225
+-jar
+D:\Myspring2\sts-4.25.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.57.0.202409101848\servers\spring-boot-language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:26:16.585
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-15 09:26:16.602
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 2108
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:26:16.900
+!MESSAGE Classpath changed for project: APIgateway
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-11-15 09:26:17.108
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.0.2
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:sources:4.0.2
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:sources:4.0.2
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2024-11-15 09:26:17.109
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:sources:4.0.2
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-11-15 09:26:17.109
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:sources:4.0.2
+
+!ENTRY org.eclipse.core.jobs 4 2 2024-11-15 09:26:17.344
+!MESSAGE An internal error occurred during: "Download sources and javadoc".
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "workspaceConfiguration" is null
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.newExecutionRequest(MavenExecutionContext.java:165)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:305)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-11-15 09:26:17.568
+!MESSAGE The workspace will exit with unsaved changes in this session.
+
+!ENTRY org.eclipse.core.jobs 2 2 2024-11-15 09:26:17.909
+!MESSAGE Job found still running after platform shutdown.  Jobs should be canceled by the plugin that scheduled them during shutdown: org.eclipse.lsp4e.LanguageServerWrapper$2 RUNNING
+	 at java.base/jdk.internal.misc.Unsafe.park(Native Method)
+	 at java.base/java.util.concurrent.locks.LockSupport.park(LockSupport.java:221)
+	 at java.base/java.util.concurrent.CompletableFuture$Signaller.block(CompletableFuture.java:1864)
+	 at java.base/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3780)
+	 at java.base/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3725)
+	 at java.base/java.util.concurrent.CompletableFuture.waitingGet(CompletableFuture.java:1898)
+	 at java.base/java.util.concurrent.CompletableFuture.join(CompletableFuture.java:2117)
+	 at org.eclipse.lsp4e.LanguageServerWrapper$2.run(LanguageServerWrapper.java:398)
+	 at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-11-15 09:32:03.283 -----------------------------------------------
+eclipse.buildId=4.25.0.202409101855
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-15 09:32:08.000
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-11-15 09:32:12.250
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-15 09:32:12.872
+!MESSAGE Logback config file: C:\Users\user\Desktop\1115\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-11-15 09:32:13.256
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-11-15 09:32:13.257
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-11-15 09:32:13.558
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-11-15 09:32:13.558
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-11-15 09:32:17.071
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:32:17.159
+!MESSAGE Boot project ADDED: APIgateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:32:17.160
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:32:17.256
+!MESSAGE Classpath changed for project: APIgateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:32:17.316
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-15 09:32:17.330
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\Myspring2\sts-4.25.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/Users/user/Desktop/1115/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1731630737329
+-Dlanguageserver.hover-timeout=225
+-jar
+D:\Myspring2\sts-4.25.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.57.0.202409101848\servers\spring-boot-language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:32:17.331
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-15 09:32:17.350
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 5296
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:32:34.679
+!MESSAGE Classpath changed for project: JWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:32:34.680
+!MESSAGE Boot project ADDED: JWT
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-11-15 09:32:50.646
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:3.0.4
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:sources:3.0.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:sources:3.0.4
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2024-11-15 09:32:50.647
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:sources:3.0.4
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-11-15 09:32:50.647
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:sources:3.0.4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:32:50.920
+!MESSAGE Classpath changed for project: payment
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:32:50.946
+!MESSAGE Boot project ADDED: payment
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:32:51.134
+!MESSAGE Classpath changed for project: payment
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:32:51.135
+!MESSAGE Classpath changed for project: APIgateway
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-11-15 09:32:51.279
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter:3.0.4
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter:jar:sources:3.0.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter:jar:sources:3.0.4
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2024-11-15 09:32:51.279
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter:jar:sources:3.0.4
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-11-15 09:32:51.279
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter:jar:sources:3.0.4
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-11-15 09:32:52.746
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter-loadbalancer:3.0.4
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:sources:3.0.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:sources:3.0.4
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2024-11-15 09:32:52.746
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:sources:3.0.4
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-11-15 09:32:52.746
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:sources:3.0.4
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-11-15 09:32:53.602
+!MESSAGE Could not download javadoc for org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:4.0.2
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:javadoc:4.0.2
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:javadoc:4.0.2
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2024-11-15 09:32:53.602
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:javadoc:4.0.2
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-11-15 09:32:53.602
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:javadoc:4.0.2
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-11-15 09:32:54.642
+!MESSAGE Could not download sources for org.springframework.cloud:spring-cloud-starter-loadbalancer:4.0.3
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:sources:4.0.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:282)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:sources:4.0.3
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2024-11-15 09:32:54.642
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:sources:4.0.3
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-11-15 09:32:54.642
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:sources:4.0.3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:05.567
+!MESSAGE Classpath changed for project: project3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:05.568
+!MESSAGE Boot project ADDED: project3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:06.283
+!MESSAGE Classpath changed for project: payment
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:06.934
+!MESSAGE Classpath changed for project: APIgateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:09.771
+!MESSAGE Classpath changed for project: test_campaign
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:09.782
+!MESSAGE Boot project ADDED: test_campaign
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:11.101
+!MESSAGE Classpath changed for project: test_campaign
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:11.102
+!MESSAGE Classpath changed for project: project3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:13.645
+!MESSAGE Classpath changed for project: test_chart
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:13.645
+!MESSAGE Boot project ADDED: test_chart
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:22.572
+!MESSAGE Classpath changed for project: test_eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:22.589
+!MESSAGE Boot project ADDED: test_eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:23.907
+!MESSAGE Classpath changed for project: test_eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:25.996
+!MESSAGE Classpath changed for project: test_shop-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:26.008
+!MESSAGE Boot project ADDED: test_shop-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:26.095
+!MESSAGE Classpath changed for project: test_shop-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:26.243
+!MESSAGE Classpath changed for project: project3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:29.371
+!MESSAGE Classpath changed for project: test_sql2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:29.375
+!MESSAGE Boot project ADDED: test_sql2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:30.964
+!MESSAGE Classpath changed for project: test_thing
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:30.965
+!MESSAGE Boot project ADDED: test_thing
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:32.776
+!MESSAGE Classpath changed for project: test_thing2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:33:32.777
+!MESSAGE Boot project ADDED: test_thing2
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-11-15 09:38:46.027
+!MESSAGE Could not download javadoc for org.springframework.cloud:spring-cloud-starter-loadbalancer:4.0.3
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:javadoc:4.0.3
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:javadoc:4.0.3
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2024-11-15 09:38:46.027
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:javadoc:4.0.3
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-11-15 09:38:46.027
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:javadoc:4.0.3
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-11-15 09:38:49.362
+!MESSAGE Could not download javadoc for org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:3.0.4
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:javadoc:3.0.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:javadoc:3.0.4
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2024-11-15 09:38:49.362
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:javadoc:3.0.4
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-11-15 09:38:49.362
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-netflix-eureka-client:jar:javadoc:3.0.4
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2024-11-15 09:38:49.707
+!MESSAGE Could not download javadoc for org.springframework.cloud:spring-cloud-starter-loadbalancer:3.0.4
+!STACK 1
+org.eclipse.core.runtime.CoreException: Could not resolve artifact org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:javadoc:3.0.4
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$7(MavenImpl.java:540)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:292)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:509)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:494)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:308)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:294)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:252)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:220)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:149)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.embedder.IMaven.execute(IMaven.java:300)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:149)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Contains: Missing org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:javadoc:3.0.4
+!SUBENTRY 1 org.eclipse.m2e.core 4 -1 2024-11-15 09:38:49.707
+!MESSAGE Could not resolve artifact org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:javadoc:3.0.4
+!SUBENTRY 2 org.eclipse.m2e.core 4 0 2024-11-15 09:38:49.707
+!MESSAGE Missing org.springframework.cloud:spring-cloud-starter-loadbalancer:jar:javadoc:3.0.4
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 09:38:50.410
+!MESSAGE Classpath changed for project: payment
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 09:57:03.666
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 09:57:03.668
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 09:57:03.669
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 09:57:03.670
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 09:57:03.675
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 09:57:03.678
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-11-15 10:00:56.202
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:149)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:225)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:00:56.222
+!MESSAGE InterruptedException
+!STACK 0
+java.lang.InterruptedException
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:386)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 2 0 2024-11-15 10:00:57.849
+!MESSAGE Could not get hover region due to timeout after 1000 milliseconds
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:149)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:225)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4326)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1174)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4124)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3712)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:668)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:605)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1481)
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-15 10:03:20.828
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-15 10:03:21.028
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "D:\Myspring2\sts-4.25.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-15 10:03:21.049
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-15 10:08:07.925
+!MESSAGE [Info]	No ES Library found for file: file:///C:/Users/user/Desktop/1115/payment/src/main/resources/static/js/payment.js
+!SESSION 2024-11-15 10:10:12.796 -----------------------------------------------
+eclipse.buildId=4.25.0.202409101855
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-15 10:10:15.470
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-15 10:10:21.315
+!MESSAGE Logback config file: C:\Users\user\Desktop\1115\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-11-15 10:10:21.701
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-11-15 10:10:21.701
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-11-15 10:10:21.982
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-11-15 10:10:21.982
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-15 10:10:26.198
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-15 10:10:26.446
+!MESSAGE [Info]	Using Typescript version (user-setting) 5.5.4 from path "D:\Myspring2\sts-4.25.0.RELEASE\plugins\org.eclipse.wildwebdeveloper_1.2.3.202408270415\node_modules\typescript\lib\tsserver.js"
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-15 10:10:26.460
+!MESSAGE [Info]	Typescript Server version info: {version=5.5.4, source=user-setting}
+
+!ENTRY org.eclipse.jface 2 0 2024-11-15 10:10:26.747
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-11-15 10:10:26.747
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:10:27.300
+!MESSAGE Boot project ADDED: APIgateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:10:27.301
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:10:27.303
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:10:27.312
+!MESSAGE Boot project ADDED: JWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:10:27.331
+!MESSAGE Boot project ADDED: payment
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:10:27.351
+!MESSAGE Boot project ADDED: project3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:10:27.357
+!MESSAGE Boot project ADDED: test_campaign
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-15 10:10:27.358
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\Myspring2\sts-4.25.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/Users/user/Desktop/1115/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1731633027356
+-Dlanguageserver.hover-timeout=225
+-jar
+D:\Myspring2\sts-4.25.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.57.0.202409101848\servers\spring-boot-language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:10:27.359
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:10:27.365
+!MESSAGE Boot project ADDED: test_chart
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:10:27.374
+!MESSAGE Boot project ADDED: test_eureka
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-15 10:10:27.378
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 28112
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:10:27.382
+!MESSAGE Boot project ADDED: test_shop-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:10:27.389
+!MESSAGE Boot project ADDED: test_sql2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:10:27.395
+!MESSAGE Boot project ADDED: test_thing
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:10:27.417
+!MESSAGE Boot project ADDED: test_thing2
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-11-15 10:10:27.421
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-15 10:10:56.511
+!MESSAGE [Info]	ESLint server running in node v20.16.0
+
+!ENTRY org.eclipse.lsp4e 1 0 2024-11-15 10:13:54.605
+!MESSAGE [Info]	No ES Library found for file: file:///C:/Users/user/Desktop/1115/payment/src/main/resources/static/js/payment.js
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:13.737
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:13.761
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:13.775
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:13.787
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:13.807
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:13.822
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:13.832
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:13.841
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:13.849
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:20.875
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:20.885
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:20.896
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:20.906
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:20.915
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:20.922
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:20.931
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:20.938
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:20.946
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:36.436
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:36.446
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:36.456
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:36.464
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:36.473
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:36.480
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:36.488
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:36.496
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:14:36.505
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:15:01.053
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:15:01.061
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:15:01.070
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:15:01.078
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:15:01.086
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:15:01.094
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:15:01.101
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:15:01.109
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:15:01.116
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/controller/PaymentController.java
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:18:10.571
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/pom.xml
+
+!ENTRY org.eclipse.lsp4e 4 0 2024-11-15 10:26:53.551
+!MESSAGE [Error]	Unexpected resource file:///C:/Users/user/Desktop/1115/payment/src/main/java/com/sboot/sijak/last_payment/security/SecurityConfig.java
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 10:27:00.059
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/application-client_9.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 10:27:00.060
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/jobXML_2_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 10:27:00.061
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jakartaee/beans_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 10:27:00.062
+!MESSAGE The given URI https://jakarta.ee/xml/ns/jaxb/bindingschema_3_0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 10:27:00.078
+!MESSAGE The given URI https://jakarta.ee/xml/ns/validation/validation-configuration-3.0.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+
+!ENTRY org.eclipse.wildwebdeveloper.xml 2 0 2024-11-15 10:27:00.081
+!MESSAGE The given URI http://xmlns.jcp.org/xml/ns/javaee/web-facesconfig_2_1.xsd from org.eclipse.jst.standard.schemas could not be resolved for local access
+!SESSION 2024-11-15 10:33:39.511 -----------------------------------------------
+eclipse.buildId=4.25.0.202409101855
+java.version=21.0.4
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.springframework.boot.ide.branding.sts4
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-15 10:33:41.672
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-11-15 10:33:46.432
+!MESSAGE Logback config file: C:\Users\user\Desktop\1115\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.ui 2 0 2024-11-15 10:33:46.854
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-11-15 10:33:46.854
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.eclipse.ui 2 0 2024-11-15 10:33:47.139
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2024-11-15 10:33:47.139
+!MESSAGE Commands should really have a category: plug-in='org.springframework.tooling.boot.ls', id='spring.initializr.addStarters', categoryId='org.eclipse.lsp4e.commandCategory'
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:33:53.442
+!MESSAGE Boot project ADDED: APIgateway
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:33:53.443
+!MESSAGE Starting Boot LS...
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:33:53.468
+!MESSAGE Started Boot LS process
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:33:53.470
+!MESSAGE Boot project ADDED: JWT
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:33:53.471
+!MESSAGE Boot project ADDED: payment
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:33:53.474
+!MESSAGE Boot project ADDED: project3
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:33:53.477
+!MESSAGE Boot project ADDED: test_campaign
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:33:53.478
+!MESSAGE Boot project ADDED: test_chart
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:33:53.479
+!MESSAGE Boot project ADDED: test_eureka
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:33:53.480
+!MESSAGE Boot project ADDED: test_shop-1
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:33:53.481
+!MESSAGE Boot project ADDED: test_sql2
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:33:53.482
+!MESSAGE Boot project ADDED: test_thing
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:33:53.483
+!MESSAGE Boot project ADDED: test_thing2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-15 10:33:53.496
+!MESSAGE Command list starting LS: org.springframework.tooling.boot.ls
+START:
+D:\Myspring2\sts-4.25.0.RELEASE\plugins\org.eclipse.justj.openjdk.hotspot.jre.full.win32.x86_64_21.0.4.v20240802-1551\jre\bin\javaw.exe
+-Dsts.lsp.client=eclipse
+-Xmx1024m
+-XX:TieredStopAtLevel=1
+-Xlog:jni+resolve=off
+-XX:ErrorFile=C:/Users/user/Desktop/1115/.metadata/.plugins/org.springframework.tooling.boot.ls/fatal-error-spring-boot_1731634433494
+-Dlanguageserver.hover-timeout=225
+-jar
+D:\Myspring2\sts-4.25.0.RELEASE\plugins\org.springframework.tooling.boot.ls_1.57.0.202409101848\servers\spring-boot-language-server\spring-boot-language-server-1.57.0-SNAPSHOT-exec.jar
+END
+
+!ENTRY org.springframework.tooling.boot.ls 1 0 2024-11-15 10:33:53.497
+!MESSAGE DelegatingStreamConnectionProvider - Starting Boot LS
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-11-15 10:33:53.512
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\user'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2024-11-15 10:33:53.518
+!MESSAGE Started org.springframework.tooling.boot.ls LS process 25720
+
+!ENTRY org.eclipse.jface 2 0 2024-11-15 10:46:26.675
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2024-11-15 10:46:26.675
+!MESSAGE A conflict occurred for CTRL+R:
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.eclipse.debug.ui.commands.RunToLine,Run to Line,
+		Resume and break when execution reaches the current line,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.debug.ui.commands.RunToLine"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.debugging,,,system)
+Binding(CTRL+R,
+	ParameterizedCommand(Command(org.springframework.ide.eclipse.boot.restart.commands.restart,Trigger Restart,
+		Restart Spring Boot Application,
+		Category(org.eclipse.debug.ui.category.run,Run/Debug,Run/Debug command category,true),
+		WorkbenchHandlerServiceHandler("org.springframework.ide.eclipse.boot.restart.commands.restart"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.debug.ui.console,,,system)
+
+!ENTRY Activator 4 0 2024-11-15 10:56:09.400
+!MESSAGE NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "conf" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "conf" is null
+	at org.springframework.ide.eclipse.boot.launch.BootLaunchConfigurationDelegate.getEnableJmx(BootLaunchConfigurationDelegate.java:427)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:195)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.processCreated(RunStateTracker.java:273)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.processCreated(ProcessTracker.java:105)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.handleDebugEvent(ProcessTracker.java:71)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker$1.handleDebugEvents(ProcessTracker.java:48)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1287)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1321)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY Activator 4 0 2024-11-15 10:56:09.401
+!MESSAGE NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, String)" because "conf" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, String)" because "conf" is null
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProjectName(AbstractBootLaunchConfigurationDelegate.java:316)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProject(AbstractBootLaunchConfigurationDelegate.java:301)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:196)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.processCreated(RunStateTracker.java:273)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.processCreated(ProcessTracker.java:105)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.handleDebugEvent(ProcessTracker.java:71)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker$1.handleDebugEvents(ProcessTracker.java:48)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1287)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1321)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY Activator 4 0 2024-11-15 10:56:12.793
+!MESSAGE NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "conf" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, boolean)" because "conf" is null
+	at org.springframework.ide.eclipse.boot.launch.BootLaunchConfigurationDelegate.getEnableJmx(BootLaunchConfigurationDelegate.java:427)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:195)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.processCreated(RunStateTracker.java:273)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.processCreated(ProcessTracker.java:105)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.handleDebugEvent(ProcessTracker.java:71)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker$1.handleDebugEvents(ProcessTracker.java:48)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1287)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1321)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY Activator 4 0 2024-11-15 10:56:12.794
+!MESSAGE NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, String)" because "conf" is null
+!STACK 0
+java.lang.NullPointerException: Cannot invoke "org.eclipse.debug.core.ILaunchConfiguration.getAttribute(String, String)" because "conf" is null
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProjectName(AbstractBootLaunchConfigurationDelegate.java:316)
+	at org.springframework.ide.eclipse.boot.launch.AbstractBootLaunchConfigurationDelegate.getProject(AbstractBootLaunchConfigurationDelegate.java:301)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:196)
+	at org.springframework.ide.eclipse.boot.dash.BootDashActivator$1.stateChanged(BootDashActivator.java:1)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.updateOwnerStatesAndFireEvents(RunStateTracker.java:216)
+	at org.springframework.ide.eclipse.boot.dash.util.RunStateTracker.processCreated(RunStateTracker.java:273)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.processCreated(ProcessTracker.java:105)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker.handleDebugEvent(ProcessTracker.java:71)
+	at org.springframework.ide.eclipse.boot.util.ProcessTracker$1.handleDebugEvents(ProcessTracker.java:48)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1287)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1321)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:498)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)

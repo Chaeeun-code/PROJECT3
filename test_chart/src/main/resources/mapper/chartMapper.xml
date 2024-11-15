@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- <mapper namespace="mapper.mybatismapper"> -->
+<mapper namespace="com.itcom.Chart.mapper.chartMapper">
+
+    <update id="increaseClickCount" parameterType = "String">
+        UPDATE chart
+        SET click_count = click_count + 1
+        WHERE thing_id = #{thingId}
+    </update>
+
+    <update id="increaseManCount">
+        UPDATE chart
+        SET man = man + 1
+        WHERE thing_id = #{thingId}
+    </update>
+
+    <update id="increaseWomanCount">
+        UPDATE chart
+        SET woman = woman + 1
+        WHERE thing_id = #{thingId}
+    </update>
+
+    <update id="increaseTeenagerCount">
+        UPDATE chart
+        SET teenager = teenager + 1
+        WHERE thing_id = #{thingId}
+    </update>
+
+    <update id="increaseMiddleAgedCount">
+        UPDATE chart
+        SET middleaged = middleaged + 1
+        WHERE thing_id = #{thingId}
+    </update>
+
+    <update id="increaseElseAgeCount">
+        UPDATE chart
+        SET elseage = elseage + 1
+        WHERE thing_id = #{thingId}
+    </update>
+    
+    <select id="topClickCountItems" resultType="com.itcom.Chart.vo.ChartVO">
+    SELECT thing_id, name, click_count
+    FROM (
+        SELECT thing_id, name, click_count
+        FROM chart
+        ORDER BY click_count DESC
+    )
+    
+    WHERE ROWNUM &lt; = 4
+</select>
+
+<select id="getMonthlySignupCount" resultType="map">
+    SELECT TO_CHAR(date_, 'YYYY-MM') AS signup_month, COUNT(*) AS signup_count
+    FROM customer
+    GROUP BY TO_CHAR(date_, 'YYYY-MM')
+    ORDER BY signup_month
+</select>
+
+
+<select id="getProductDemographics" parameterType="String" resultType="map">
+    SELECT
+        thing_id,
+        man AS MAN_COUNT,
+        woman AS WOMAN_COUNT,
+        teenager AS TEENAGER_COUNT,
+        middleaged AS MIDDLEAGED_COUNT,
+        elseage AS ELSEAGE_COUNT
+    FROM chart
+    WHERE thing_id = #{thingId}
+</select>
+
+
+
+    
+
+</mapper>

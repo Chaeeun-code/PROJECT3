@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- <mapper namespace="mapper.mybatismapper"> -->
+<mapper namespace="com.itcom.Campaign.mapper.campaignMapper">
+
+<select id="getAllInfo" resultType="com.itcom.Campaign.vo.campaignVo">
+	SELECT  cimage_id AS cimageid, cimage_data AS cimage FROM campaign
+</select>
+
+<select id="getInfo" resultType="com.itcom.Campaign.vo.campaignVo">
+	SELECT * FROM campaign where status = 'PENDING'
+</select>
+
+<insert id="insertCampaignAccept">
+    INSERT INTO campaign_accept (customer_id, campaign_image, status)
+    VALUES (#{customerId}, #{campaignImage}, 'PENDING')
+</insert>
+
+
+ <select id="getCampaignAccepts" parameterType="String" resultType="com.itcom.Campaign.vo.campaignVo">
+        SELECT customer_id AS customerId, campaign_image AS campaignImage, certification_date AS certificationDate
+        FROM campaign_accept
+        WHERE customer_id = #{customerId}
+</select>
+
+<update id="approveCertification">
+    UPDATE campaign_accept
+    SET status = 'APPROVED'
+    WHERE customer_id = #{customerId} 
+    AND certification_date = #{certificationDate} <!-- 직접 Timestamp로 비교 -->
+</update>
+
+<insert id="approveCertification1">
+    INSERT INTO campaign_accept (customer_id, campaign_image, status)
+    VALUES (#{customerId}, #{campaignImage}, 'PENDING')
+</insert>
+
+</mapper>

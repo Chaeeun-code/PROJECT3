@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.project.shop1.mapper.CustomerMapper">
+
+    <!-- 모든 고객 조회 -->
+    <select id="findAllCustomers" resultType="com.project.shop1.model.Customer">
+        SELECT * FROM customer
+    </select>
+
+    <!-- 특정 ID로 고객 조회 -->
+    <select id="findCustomerById" parameterType="String" resultType="com.project.shop1.model.Customer">
+        SELECT customer_id, name, email, tel FROM customer WHERE customer_id = #{customer_id}
+    </select>
+   
+    <select id="getPasswordByCustomerId" parameterType="String" resultType="String">
+    SELECT pw FROM customer WHERE customer_id = #{customer_id}
+	</select> 
+
+    <!--  회원 정보 수정 !  -->
+     <update id="updateCustomerInfo">
+        UPDATE customer
+         <set>
+       		 <if test="newName != null">name = #{newName},</if>
+       		 <if test="newEmail != null">email = #{newEmail},</if>
+       		 <if test="newPhone != null">tel = #{newPhone},</if>
+   		 </set>
+        WHERE customer_id = #{customerId}
+    </update>
+    
+    
+    <!--  비밀번호 확인 후 변경  -->
+    <select id="getCurrentPassword" parameterType="string" resultType="string">
+        SELECT pw
+        FROM customer
+        WHERE customer_id = #{customerId}
+    </select>
+
+    <!-- 비밀번호 업데이트 -->
+    <update id="updatePassword" parameterType="map">
+        UPDATE customer
+        SET pw = #{newPassword}
+        WHERE customer_id = #{customerId}
+    </update>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+</mapper>

@@ -1,0 +1,140 @@
+/* 전체 레이아웃 설정 */
+@font-face {
+    font-family: 'SnowflakeFont'; /* SMUSnowflake-Bold.ttf 폰트 */
+    src: url('/font/SMUSnowflake-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunnu'; 
+     src: url('https://res.cloudinary.com/dhuybxduy/raw/upload/v1731058096/NoonnuBasicGothicRegular_mh9o3w.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SB_B'; 
+     src: url('https://res.cloudinary.com/dhuybxduy/raw/upload/v1730868512/SB_B_swtpiq.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SB_L'; 
+    src: url('https://res.cloudinary.com/dhuybxduy/raw/upload/v1730868513/SB_L_bdvrte.ttf') format('truetype');
+    font-style: normal;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+	padding-top: 55px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing: border-box;
+	height: 50px;
+}
+
+/* 네비게이션 링크 스타일 */
+.navbar .nav-links {
+    flex-grow: 1; /* 중앙 정렬을 위해 공간 차지 */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 화면이 좁아질 때 링크들이 줄바꿈 되도록 설정 */
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'nunnu', sans-serif; /* go_L 폰트 적용 */
+}
+
+/* 인증 버튼 스타일 */
+.navbar .auth-buttons {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0; /* 화면이 좁아져도 인증 버튼이 잘리지 않도록 설정 */
+}
+
+.navbar .auth-buttons button {
+    padding: 5px 10px;
+    font-size: 20px;
+    font-family: 'nunnu', sans-serif; /* go_L 폰트 적용 */
+    cursor: pointer;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    white-space: nowrap; /* 버튼 텍스트가 줄바꿈되지 않도록 설정 */
+}
+
+.logo img {
+    width: 200px; /* Adjust the width as needed */
+    height: 140; /* Maintains the aspect ratio */
+}
+
+.container {
+	display: flex;
+    margin-top: 20px;
+}
+
+.sidebar {
+	
+    width: 20%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-right: 1px solid #e0e0e0;
+	min-height: 800px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar ul li.active a {
+    font-weight: bold;
+    color: #0056b3;
+}
+
+.main-content {
+	width: 80%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+        }
+
+.user-info-box, .order-history-box {
+	background-color: #ffffff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+.user-info-box h3, .order-history-box h3 {
+	margin-top: 0;
+	margin-bottom: 15px;
+        }

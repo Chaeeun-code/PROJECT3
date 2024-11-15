@@ -1,0 +1,305 @@
+/* 상단 네비게이션 바 스타일 */
+
+@font-face {
+    font-family: 'SnowflakeFont'; /* SMUSnowflake-Bold.ttf 폰트 */
+    src: url('/font/SMUSnowflake-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nunnu'; 
+     src: url('https://res.cloudinary.com/dhuybxduy/raw/upload/v1731058096/NoonnuBasicGothicRegular_mh9o3w.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SB_B'; 
+     src: url('https://res.cloudinary.com/dhuybxduy/raw/upload/v1730868512/SB_B_swtpiq.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SB_L'; 
+    src: url('https://res.cloudinary.com/dhuybxduy/raw/upload/v1730868513/SB_L_bdvrte.ttf') format('truetype');
+    font-style: normal;
+}
+
+
+html, body {
+	background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing: border-box;
+   height: 50px;
+   transition: background-color 0.3s ease; /* 배경색이 부드럽게 전환되도록 설정 */
+}
+
+/* 네비게이션 링크 스타일 */
+.navbar .nav-links {
+    flex-grow: 1; /* 중앙 정렬을 위해 공간 차지 */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* 화면이 좁아질 때 링크들이 줄바꿈 되도록 설정 */
+}
+
+.navbar .nav-links a {
+    text-decoration: none;
+    margin: 0 20px;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'nunnu', sans-serif; /* go_L 폰트 적용 */
+    transition: color 0.3s ease; /* 글자 색 전환이 부드럽게 */
+}
+
+/* 인증 버튼 스타일 */
+.navbar .auth-buttons {
+    display: flex;
+    gap: 10px;
+    flex-shrink: 0; /* 화면이 좁아져도 인증 버튼이 잘리지 않도록 설정 */
+}
+
+.navbar .auth-buttons button {
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: 'nunnu', sans-serif; /* go_L 폰트 적용 */
+    cursor: pointer;
+    border: 1px solid #000000;
+    background-color: #ffffff;
+    white-space: nowrap; /* 버튼 텍스트가 줄바꿈되지 않도록 설정 */
+    border-radius: 15px; /* 모서리를 둥글게 설정 */
+    transition: background-color 0.3s, color 0.3s; /* 부드러운 전환 효과 추가 */
+}
+
+.navbar .auth-buttons button:hover {
+    background-color: #D0F5BE; /* 마우스가 올라가면 배경색을 녹색으로 변경 */
+    color: white; /* 텍스트 색상을 흰색으로 변경 */
+}
+
+.logo img {
+    width: 200px; /* Adjust the width as needed */
+    height: 140; /* Maintains the aspect ratio */
+}
+
+/* 모달 스타일 */
+.modal {
+    display: none; /* 초기에는 보이지 않도록 설정 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.modal-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-btn:hover {
+    background-color: #ddd;
+}
+
+/*---------------------------------------------------------*/
+
+
+.top {
+	width: 100%;
+   	background-color: #dae8fc;
+	
+}
+
+.top-content{
+	width:80%;
+	margin: 0 auto;
+	padding-top: 70px;
+}
+hr{
+	height: 1px;          /* 선을 얇게 만듦 */
+	opacity: 0.5;         /* 선을 연하게 만듦 */
+}
+
+.top-content hr, .line hr{
+	height: 1px; 
+	opacity: 1; 
+}
+
+h1 {
+	font-family: 'nunnu'; 
+    font-size: 30px;
+    margin: 20px;
+    color: #333333;
+    font-weight: bold;
+}
+p{
+	font-family: 'nunnu';  
+}
+
+.container {
+   max-width: 80%;   
+   margin: 0 auto;
+
+}
+
+.container h2{
+	font-family: 'nunnu';
+	font-size: 18px;
+}
+
+.order-section {
+	font-family: 'nunnu'; 
+	font-size: 16px;
+   	display: flex;
+   	flex-direction: column;
+   	justify-content: space-between;   
+   	flex-wrap: wrap;
+}
+.product-placeholder{
+   float:left;
+   width: 150px;
+   height: 150px;
+   margin-left: 10px;
+}
+
+.product-image{
+   flex-direction:column;
+   justify-content: center;
+}
+
+.quantity-count {
+    margin-left: 80%;
+    gap: 10px;
+}
+
+.order-buy{
+   margin-left: 80%;
+   gap: 10px;
+}
+
+.shipping-section h2, .discount-section h2, .payment-section h2{ 
+	font-size: 30px;
+   margin-top:70px;
+}
+
+.discount-section button{
+	font-family: 'SB_L';
+   width: 200px;
+}
+
+.shipping-section, .discount-section, .payment-section {
+	font-family: 'nunnu'; 
+    margin-top: 30px;
+}
+
+.shipping-section form, .discount-section form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+}
+
+
+
+.shipping-section label, .discount-section label {
+    margin-bottom: 5px;
+}
+
+.shipping-section input, .shipping-section textarea, .discount-section input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.payment-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.payment-section th, .payment-section td {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.button-section {
+	font-family: 'nunnu'; 
+    text-align: center;
+    margin-top: 30px;
+}
+
+.discount-section button,.button-section button {
+	font-family: 'SB_L';
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.discount-section button:hover,.button-section button:hover {
+    background-color: #333;
+}
+.modal {
+        display: none; /* 모달 기본적으로 숨김 */
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+        background-color: #fff;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 300px;
+        text-align: center;
+    }
+
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
