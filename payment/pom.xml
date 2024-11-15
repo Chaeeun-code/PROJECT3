@@ -62,11 +62,14 @@
 			<artifactId>spring-boot-devtools</artifactId>
 		</dependency>
 
+<<<<<<< HEAD
 <dependency>
     <groupId>org.springframework.cloud</groupId>
     <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
 </dependency>
 
+=======
+>>>>>>> origin/main
 		<dependency>
 			<groupId>com.oracle.database.jdbc</groupId>
 			<artifactId>ojdbc11</artifactId>
@@ -90,6 +93,7 @@
 		</dependency>
 	</dependencies>
 
+<<<<<<< HEAD
 <dependencyManagement>
     <dependencies>
         <dependency>
@@ -102,6 +106,8 @@
     </dependencies>
 </dependencyManagement>
 
+=======
+>>>>>>> origin/main
 	<build>
 		<plugins>
 			<plugin>
@@ -116,6 +122,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
+<<<<<<< HEAD
 			
 			
 	<plugin>
@@ -131,6 +138,8 @@
     </configuration>
 </plugin>
 
+=======
+>>>>>>> origin/main
 		</plugins>
 	</build>
 

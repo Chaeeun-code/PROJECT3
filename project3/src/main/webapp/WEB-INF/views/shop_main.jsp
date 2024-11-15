@@ -20,9 +20,15 @@
 		        </div>
 		        <div class="nav-links">
 		            <a href="${pageContext.request.contextPath}/campaign_main">참여활동</a>
+<<<<<<< HEAD
 		            <a href="#">회사소개</a>
 		            <a href="${pageContext.request.contextPath}/shop_main">eco 쇼핑</a>
 		            <a href="#">참여방법</a>
+=======
+		            <a href="#">회사소소개3</a>
+		            <a href="${pageContext.request.contextPath}/shop_main">eco 쇼핑</a>
+		            <a href="#">참여뱅뱅법</a>
+>>>>>>> origin/main
 		        </div>
 		        <div class="auth-buttons">
 					<a href="#">

@@ -9,6 +9,7 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+<<<<<<< HEAD
        <div class="navbar">
            <div class="logo">
             <a href="${pageContext.request.contextPath}/index">
@@ -30,6 +31,25 @@
             </a>
            </div>
        </div>
+=======
+    <div class="navbar">
+        <div class="logo">
+            <a href="${pageContext.request.contextPath}/index">
+                <img src="${pageContext.request.contextPath}/grim/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="#">참여활동</a>
+            <a href="#">회사소개</a>
+            <a href="${pageContext.request.contextPath}/shop_main">eco 쇼핑</a>
+            <a href="#">참여방법</a>
+        </div>
+        <div class="auth-buttons">
+            <a href="#"><button class="signup-btn">sign up</button></a>
+            <a href="#"><button class="login-btn">log in</button></a>
+        </div>
+    </div>
+>>>>>>> origin/main
 	
     <!-- 상품 상세 정보 영역 -->
 	<div class="container">
@@ -78,6 +98,7 @@
 		</div>
 	</div>	
 	
+<<<<<<< HEAD
 	         <script>
     document.addEventListener("DOMContentLoaded", function() {
         const authButtons = document.querySelector('.auth-buttons');
@@ -143,6 +164,8 @@
                }
                </script>
 	
+=======
+>>>>>>> origin/main
     <script>
         // 페이지가 로드되면 상품 정보를 불러옵니다.
         document.addEventListener("DOMContentLoaded", function() {
@@ -222,7 +245,11 @@
 				url: 'https://localhost:8588/api/products/cart',
 				method: 'POST',
 				contentType: 'application/json',
+<<<<<<< HEAD
 				data: JSON.stringify({customer_id:username ,thing_id: productId, price:price, num:count, name:name,
+=======
+				data: JSON.stringify({customer_id:'C001' ,thing_id: productId, price:price, num:count, name:name,
+>>>>>>> origin/main
 			image_path: image_path}),
 				success: function() {
 					document.querySelector(".modal").style.display = "block";

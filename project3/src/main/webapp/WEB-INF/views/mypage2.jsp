@@ -68,6 +68,7 @@
 					</div>
 		       </div>
 		   </div>
+<<<<<<< HEAD
 		   <script>
 		   // 세션 스토리지에서 role 값 가져오기
            const username = sessionStorage.getItem("username");
@@ -109,6 +110,8 @@
                console.log("role이 'customer' 또는 'company'가 아닙니다.");
            }
 		   </script>
+=======
+>>>>>>> origin/main
 		  <!-- <script>
 		      document.addEventListener("DOMContentLoaded", function() {
 		          loadCredits();
@@ -182,7 +185,11 @@
 		          $.ajax({
 		              url: 'https://localhost:8587/api/order_history',
 		              method: 'GET',
+<<<<<<< HEAD
 		              data: { customerId: username },
+=======
+		              data: { customerId: 'C001' },
+>>>>>>> origin/main
 		              contentType: 'application/json',
 		              success: function(response) {
 		                  console.log('주문 이력 응답:', response);

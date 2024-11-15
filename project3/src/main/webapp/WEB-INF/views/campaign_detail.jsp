@@ -70,6 +70,7 @@
 				            <button type="button" id="verifyButton">인증</button>
 				        </form>
 				    </div>
+<<<<<<< HEAD
 				<script>
 				   // 세션 스토리지에서 role 값 가져오기
 	               const username = sessionStorage.getItem("username");
@@ -113,6 +114,9 @@
 				
 				
 				</script>
+=======
+
+>>>>>>> origin/main
                  
                  <script>
                     // 페이지 로드 시 고객 정보 로드
@@ -125,7 +129,11 @@
                          $.ajax({
                              url: 'https://localhost:8888/api/customers/list', 
                              type: 'GET',
+<<<<<<< HEAD
                              data: { name: username },
+=======
+                             data: { name: 'C001' },
+>>>>>>> origin/main
                              contentType: 'application/json',
                              success: function(customer) {
                                  document.getElementById('name').value  = customer.name;
@@ -144,7 +152,11 @@
 					        console.log("AJAX 요청 시작"); // 요청 시작 확인
 					        
 					        const formData = new FormData();
+<<<<<<< HEAD
 					        formData.append('customer_id', username); 
+=======
+					        formData.append('customer_id', 'C001'); // customer_id는 C001로 고정
+>>>>>>> origin/main
 					        
 					        const fileInput = $('input[name="uploadFile"]')[0];
 					        if (fileInput.files.length > 0) {

@@ -13,6 +13,7 @@
    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
 </head>
 <body>
+<<<<<<< HEAD
 	
 	<div id="logoutModal" class="modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center;">
 	    <div class="modal-content" style="background-color: white; padding: 20px; border-radius: 5px; text-align: center;">
@@ -22,6 +23,8 @@
 	    </div>
 	</div>
 	
+=======
+>>>>>>> origin/main
 
     <%-- RegionCoordinates에서 좌표 데이터를 가져오기 --%>
     <%
@@ -46,6 +49,7 @@
                <button class="signup-btn">sign up</button>
             </a>
             <a href="#">
+<<<<<<< HEAD
                <button class="login-btn" onclick="location.href='https://localhost:8443/login'">log in</button>
             </a>
            </div>
@@ -59,6 +63,12 @@
     	</div>
 		</div>
            
+=======
+               <button class="login-btn" onclick="location.href='/login'">log in</button>
+            </a>
+           </div>
+       </div>
+>>>>>>> origin/main
 
    <!-- 배너 섹션 -->
    <div class="banner-section">
@@ -79,6 +89,7 @@
    </div>
    
    <div class="section-gap"></div>
+<<<<<<< HEAD
 
    <div class="eco-section">
       <div class="eco-images-container">
@@ -157,6 +168,10 @@
    </div>
 
    <div class="map-section">
+=======
+   
+    <div class="map-section">
+>>>>>>> origin/main
         <h2>전국별 일산화탄소 농도</h2>
         <div id="map" style="width:1000px; height:900px; margin: 0 auto;"></div>
         <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=471d79826dc265d84f4964cd36744859"></script>
@@ -252,6 +267,87 @@
               }
           }
     %>
+<<<<<<< HEAD
+=======
+
+   <div class="eco-section">
+      <div class="eco-images-container">
+           <div class="eco-image-left">
+               <img src="https://res.cloudinary.com/dhuybxduy/image/upload/v1730854684/left_rk3xpj.jpg">
+           </div>
+           <div class="eco-image-right">
+                 <img src="https://res.cloudinary.com/dhuybxduy/image/upload/v1730854686/right_yhjofx.jpg">
+           </div>
+       </div>
+       
+       <div class="eco-text">
+           <h2>Eco Wave와 함께하는<br>친환경 프로젝트</h2>
+           <p>
+               지구를 위한 작은 작은 변화, 우리의 손에서 시작됩니다.<br>
+               환경 보호는 모두의 참여로 이루어집니다!
+           </p>
+           <button class="join-btn">참여하기</button>
+      </div>
+   </div>
+   
+   <div class="eco-heading-section fade-in-up">
+       <div class="report-content">
+         <div class="report-text">
+            <h2>Eco 보고서<br>친환경 프로젝트</h2>
+            <p>지구를 위한 작은 작은 변화, 우리의 손에서 시작됩니다.<br>환경 보호는 모두의 참여로 이루어집니다!</p>
+            <a href="${pageContext.request.contextPath}/manage">
+            <button class="join-btn">참여하기</button>
+            </a>
+         </div>
+           <div class="eco-icon-box">
+              <img src="https://res.cloudinary.com/dhuybxduy/image/upload/v1730854683/eco-icon_ogx2tp.png" alt="eco 아이콘" class="eco_icon">
+           </div>
+           <div class="heading-box fade-in-up">
+              <img src="https://res.cloudinary.com/dhuybxduy/image/upload/v1730854683/arrow_duqsvo.png" alt="Eco 아이콘" class="heading-icon">
+               <h2>탄소제로란?</h2>
+               <p>지구의 숨을 가볍게!<br>우리가 만든 탄소를 없애거나 줄여서 지구에 남는 발자국을 0으로 만드는 일.<br>작은 실천이 모여 더 푸른 내일을 만듭니다.</p>
+           </div>
+       </div>
+   </div>
+   
+   <div class="report-tags fade-in-up">
+      <div class="tag-tag1 fade-in-up">
+         <div class="tag1-label"># 심은 나무 수 </div>
+           <div class="tag-value"> 381 그루 +</div>
+      </div>
+      <div class="tag-tag2 fade-in-up">
+         <div class="tag2-label"># 줄어든 탄소량</div>
+             <div class="tag-value">3,812kg +</div>
+      </div>
+   </div>
+
+   <div class="eco-effects-section fade-in-up">
+       <div class="report-effects fade-in-up">
+           <h2>친환경 활동의 효과</h2>
+           <p>나무 한 그루를 심으면 연간 약 22kg의 탄소를 흡수할 수 있습니다.<br>
+              이런 작은 실천들이 모이면 대기 중 탄소량을 효과적으로 줄이고 지구를 더욱 건강하게 만드는 데 큰 기여를 합니다.<br>
+              함께하는 노력이 깨끗한 환경을 만들어갑니다!</p>  
+           <img src="https://res.cloudinary.com/dhuybxduy/image/upload/v1731292668/free-icon-forest-5052680_zwysow.png" alt="나무이미지" class="tree-image"> 
+       </div>
+   </div>
+
+   <div class="eco-footer-section fade-in-up">
+       <div class="eco-footer-box1 fade-in-up">
+           <img src="https://res.cloudinary.com/dhuybxduy/image/upload/v1731294562/group-young-volunteers-park-they-are-planting-tree-seedling_sw1tsg.jpg" alt="나무 심는 사진" class="tree">
+           <div class="report-footer fade-in-up">
+               <p class="text">친환경 활동 참여자 수</p>
+               <h2 class="count">1,964명 +</h2>
+           </div>
+       </div>
+       <div class="eco-footer-box2 fade-in-up">
+           <div class="report-footer">
+               <h2 class="text2">Let's<br>Campaign!</h2>
+           </div>
+       </div>
+   </div>
+
+  
+>>>>>>> origin/main
     
        <script>
         var sidoMapData = <%= jsonObject.toString() %>;
@@ -450,6 +546,7 @@
     });
    
    </script>
+<<<<<<< HEAD
 
    
    <script>
@@ -556,6 +653,31 @@
     
 	
 	
+=======
+   
+         <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const authButtons = document.querySelector('.auth-buttons');
+        const accessToken = localStorage.getItem("accessToken") || sessionStorage.getItem("accessToken");
+        const savedUsername = sessionStorage.getItem("username");
+        console.log("저장된 사용자 이름:", savedUsername);
+        if (savedUsername) {
+        	console.log("로그인 상태입니다.");
+            // 로그인 상태일 경우: sign up 및 log in 버튼 숨기고 장바구니와 사용자 아이디 표시
+            authButtons.innerHTML =
+                '<a href="${pageContext.request.contextPath}/shop_cart">' +
+                    '<button class="cart-btn">장바구니</button>' +
+                '</a>' +
+                '<a href="${pageContext.request.contextPath}/mypage">' +
+                '<button class="cart-btn">' + savedUsername + '님</button>' +
+            	'</a>';               
+        }else {
+            // 비로그인 상태일 경우 아무것도 하지 않음 (기본 상태 유지)
+            console.log("비로그인 상태입니다.");
+        }
+    });
+</script>
+>>>>>>> origin/main
 
 <!--  에코섹션 애니메이션 효과주려고 script 작성 -->
 <script>
@@ -594,19 +716,30 @@
 	document.addEventListener("DOMContentLoaded", function() {
 	    const fadeElements = document.querySelectorAll('.fade-in-up');
 	    let lastScrollY = window.scrollY;
+<<<<<<< HEAD
 
 	    fadeElements.forEach((element) => {
 	        let animationPlayed = false;
+=======
+	    let animationPlayed = false;
+>>>>>>> origin/main
 
 	        const observer = new IntersectionObserver(entries => {
 	            entries.forEach(entry => {
 	                const currentScrollY = window.scrollY;
 
 	                if (entry.isIntersecting && currentScrollY > lastScrollY && !animationPlayed) {
+<<<<<<< HEAD
 	                    entry.target.classList.add('show');
 	                    animationPlayed = true; // 애니메이션이 실행되었음을 표시
 	                } else if (!entry.isIntersecting && currentScrollY < lastScrollY) {
 	                    entry.target.classList.remove('show');
+=======
+	                	fadeElements.classList.add('show');
+	                    animationPlayed = true; // 애니메이션이 실행되었음을 표시
+	                } else if (!entry.isIntersecting && currentScrollY < lastScrollY && animationPlayed) {
+	                	fadeElements.classList.remove('show');
+>>>>>>> origin/main
 	                    animationPlayed = false; // 다시 위에서 내려올 때만 애니메이션이 작동하도록 초기화
 	                }
 
@@ -615,6 +748,7 @@
 	        }, { threshold: 0.5 });
 
 	        observer.observe(element);
+<<<<<<< HEAD
 	    });
 
 	    window.addEventListener("scroll", function() {
@@ -626,5 +760,44 @@
 	    });
 	});
 </script>
+=======
+	    );
+
+	    window.addEventListener("scroll", function() {
+	        
+	            if (window.scrollY >= element.offsetTop + element.offsetHeight) {
+	                element.classList.add('show'); // 요소가 화면에 완전히 진입했을 때 'show' 유지
+	            }
+	        );
+	    });
+	});
+</script>
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+>>>>>>> origin/main
 </body>
 </html>

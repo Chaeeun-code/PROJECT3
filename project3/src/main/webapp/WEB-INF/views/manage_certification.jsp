@@ -64,6 +64,7 @@
         <a href="${pageContext.request.contextPath}/manage_certification" class="active">활동 인증 관리</a>
         <a href="#">회원 관리</a>
     </div>
+<<<<<<< HEAD
     
    <script>
    // 세션 스토리지에서 role 값 가져오기
@@ -106,6 +107,8 @@
        console.log("role이 'customer' 또는 'company'가 아닙니다.");
    }
    </script>
+=======
+>>>>>>> origin/main
 
 	<script>
 	    let currentCertificationDate; // 현재 승인할 인증 날짜를 저장할 변수
@@ -137,7 +140,11 @@
 	        $.ajax({
 	            url: 'http://localhost:8388/api/campaign/certification',
 	            type: 'GET',
+<<<<<<< HEAD
 	            data: { customer_id: username },
+=======
+	            data: { customer_id: 'C001' },
+>>>>>>> origin/main
 	            contentType: 'application/json',
 	            success: function(data) {
 	                console.log("AJAX 호출 성공:", data); // 성공 로그

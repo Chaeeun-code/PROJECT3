@@ -7,6 +7,7 @@ server:
     key-store-type: PKCS12
     key-alias: mylocalcert
 
+<<<<<<< HEAD
 jwt:
   server:
     url: https://localhost:8030
@@ -14,6 +15,11 @@ jwt:
 auth:
   server:
     url: https://localhost:8443
+=======
+auth:
+  server:
+    url: https://localhost:8030
+>>>>>>> origin/main
 
 spring:
   main:
@@ -45,6 +51,7 @@ spring:
               - "*"
             allowCredentials: true
 
+<<<<<<< HEAD
 eureka:
   client:
     service-url:
@@ -56,3 +63,5 @@ eureka:
   ssl:
     enabled: true
     validate-certs: false  # SSL 인증서 검증 비활성화
+=======
+>>>>>>> origin/main

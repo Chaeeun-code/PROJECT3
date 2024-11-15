@@ -7,7 +7,10 @@ import io.jsonwebtoken.JwtException;
 
 import javax.crypto.SecretKey;
 import java.util.Date;
+<<<<<<< HEAD
 import java.util.Map;
+=======
+>>>>>>> origin/main
 
 public class JwtProvider {
 
@@ -21,10 +24,16 @@ public class JwtProvider {
         this.refreshExpirationTime = refreshExpirationTime;
     }
 
+<<<<<<< HEAD
     public String generateToken(String username, Map<String, Object> additionalClaims) {
         return Jwts.builder()
                 .setSubject(username)
                 .addClaims(additionalClaims) // 추가된 정보들
+=======
+    public String generateToken(String username) {
+        return Jwts.builder()
+                .setSubject(username)
+>>>>>>> origin/main
                 .setExpiration(new Date(System.currentTimeMillis() + expirationTime))
                 .signWith(secretKey, SignatureAlgorithm.HS512)
                 .compact();

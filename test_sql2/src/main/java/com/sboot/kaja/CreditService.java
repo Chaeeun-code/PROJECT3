@@ -62,6 +62,7 @@ public class CreditService {
     	
         // 비관적 잠금을 통해 고객의 크레딧 정보를 가져옵니다.
         SawonVO sawon = dao.getCreditForUpdate(customerId);
+<<<<<<< HEAD
         System.out.println("1");
         
         // 현재 크레딧 가져오기
@@ -84,6 +85,23 @@ public class CreditService {
         // 원래 구매 내역에서 삭제
         dao.deletecancel(customerId, transactionDate);
         System.out.println("6");
+=======
+        
+        // 현재 크레딧 가져오기
+        Integer currentCredit = sawon.getCredit(); 
+        
+        // 크레딧 업데이트 계산
+        Integer updatedCredit = currentCredit + usedCredits; 
+        
+        // 크레딧 업데이트
+        dao.updateCredit(customerId, updatedCredit); // 기존 메서드를 호출
+        
+        // 거래 취소 내역에 삽입
+        dao.cancelinput(customerId, transactionDate, usedCredits);
+
+        // 원래 구매 내역에서 삭제
+        dao.deletecancel(customerId, transactionDate);
+>>>>>>> origin/main
         
         System.out.println("cancelTransaction 트랜잭션 종료 - 고객 ID: " + customerId);
     }catch (Exception e) {

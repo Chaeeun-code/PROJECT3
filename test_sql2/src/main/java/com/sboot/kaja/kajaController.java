@@ -45,8 +45,13 @@ public class kajaController {
     //크레딧 조회용 api
     
     @GetMapping("/api/shop_buy")
+<<<<<<< HEAD
     public ResponseEntity<?> getShopBuy(@RequestParam("customer_id") String customerId) {
       
+=======
+    public ResponseEntity<?> getShopBuy() {
+        String customerId = "C001";
+>>>>>>> origin/main
         Integer credit = dao.getCreditById(customerId);
         System.out.println("credit"+ credit);
 
@@ -58,6 +63,7 @@ public class kajaController {
         return new ResponseEntity<>(credit, HttpStatus.OK);  // JSON 응답 반환
     }
     
+<<<<<<< HEAD
 //    @CrossOrigin(origins="https://localhost:8443")
 //    @GetMapping("/api/mypg")
 //    public ResponseEntity<?> getID(@RequestParam("customer_id") String customerId) {
@@ -78,6 +84,33 @@ public class kajaController {
     @GetMapping("/api/customer_info")
     public ResponseEntity<SawonVO> getInfo(@RequestParam("customer_id") String customerId) {
   
+=======
+    @CrossOrigin(origins="https://localhost:8443")
+    @GetMapping("/api/mypg")
+    public ResponseEntity<?> getID(@RequestParam(required = false) String customerId) {
+        // customerId가 null 또는 빈 문자열일 경우 기본값 "C001"을 사용
+        if (customerId == null || customerId.isEmpty()) {
+            customerId = "C001";
+        }
+
+        // DB에서 customerId로 조회
+        String id = dao.getId(customerId);
+        System.out.println("id: " + id);
+
+        if (id == null) {
+            return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
+        }
+
+        return new ResponseEntity<>(id, HttpStatus.OK);
+    }
+    
+    @CrossOrigin(origins="https://localhost:8443")
+    @GetMapping("/api/customer_info")
+    public ResponseEntity<SawonVO> getInfo(@RequestParam(required = false) String customerId) {
+        if (customerId == null || customerId.isEmpty()) {
+            customerId = "C001";
+        }
+>>>>>>> origin/main
 
         SawonVO customerInfo = dao.getInfo(customerId);
         if (customerInfo == null) {
@@ -237,7 +270,11 @@ public class kajaController {
             String usedCreditsStr = (String) request.get("usedCredits");
             Integer usedCredits = Integer.parseInt(usedCreditsStr);
             String transactionDateStr = (String) request.get("transactionDate");   
+<<<<<<< HEAD
             System.out.println("취소하러 오긴함1");
+=======
+            System.out.println("취소하러 오긴함");
+>>>>>>> origin/main
             System.out.println(transactionDateStr);
             
             Instant instant = Instant.parse(transactionDateStr);
@@ -256,9 +293,14 @@ public class kajaController {
                 Integer updatedCredit = currentCredit + usedCredits;
                 dao.updateCredit(customerId, updatedCredit);
                 // DB에서 해당 거래 내역 삭제 (필요 시)
+<<<<<<< HEAD
                 System.out.println("1");
                 dao.insertCredit(customerId,transactionDate,usedCredits);
                 System.out.println("1123");
+=======
+                
+                dao.insertCredit(customerId,transactionDate,usedCredits);
+>>>>>>> origin/main
                 int a = dao.deletecredit(customerId, transactionDate);
 
                 System.out.println("a");

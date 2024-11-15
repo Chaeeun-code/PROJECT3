@@ -120,7 +120,10 @@
 		          $.ajax({
 		              url: 'https://localhost:8587/api/customer_info',
 		              method: 'GET',
+<<<<<<< HEAD
 		              data: { customer_id: username },
+=======
+>>>>>>> origin/main
 		              contentType: 'application/json',
 		              success: function(response) {
 		                  console.log('사용자 정보 응답:', response); // 응답 출력
@@ -136,13 +139,21 @@
 		          
 		          
 		       // 주문 이력 요청 직전 로그 출력
+<<<<<<< HEAD
 	// 여기 추가
+=======
+		          console.log("주문 이력 요청 URL:", 'https://localhost:8587/api/order_history?customerId=C001'); // 여기 추가
+>>>>>>> origin/main
 		          
 		          // 주문 이력 AJAX 요청
 		          $.ajax({
 		              url: 'https://localhost:8587/api/order_history',
 		              method: 'GET',
+<<<<<<< HEAD
 		              data: { customerId: username },
+=======
+		              data: { customerId: 'C001' },
+>>>>>>> origin/main
 		              contentType: 'application/json',
 		              success: function(response) {
 		                  console.log('주문 이력 응답:', response);
@@ -200,6 +211,7 @@
 	        }
 	    });
 	</script>
+<<<<<<< HEAD
 	<script>
 	   // 세션 스토리지에서 role 값 가져오기
                const username = sessionStorage.getItem("username");
@@ -241,6 +253,8 @@
                    console.log("role이 'customer' 또는 'company'가 아닙니다.");
                }
                </script>
+=======
+>>>>>>> origin/main
     
 
     </div>

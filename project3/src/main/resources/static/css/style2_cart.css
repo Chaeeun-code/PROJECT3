@@ -53,11 +53,17 @@ body {
 
 .navbar .nav-links a {
     text-decoration: none;
+<<<<<<< HEAD
     margin: 0 20px;
     color: #000000;
     font-size: 20px;
     font-family: 'nunnu', sans-serif; /* go_L 폰트 적용 */
 
+=======
+    margin: 0 10px;
+    color: #000000;
+    font-size: 16px;
+>>>>>>> origin/main
 }
 
 /* 인증 버튼 스타일 */
@@ -69,8 +75,12 @@ body {
 
 .navbar .auth-buttons button {
     padding: 5px 10px;
+<<<<<<< HEAD
     font-size: 20px;
     font-family: 'nunnu', sans-serif; /* go_L 폰트 적용 */
+=======
+    font-size: 16px;
+>>>>>>> origin/main
     cursor: pointer;
     border: 1px solid #000000;
     background-color: #ffffff;
@@ -86,10 +96,16 @@ body {
 .me{
 	width: 100%; 
 	background-color: #dae8fc;
+<<<<<<< HEAD
 	
 }
 .me-content{
 	padding-top: 70px;
+=======
+	padding-top: 70px;
+}
+.me-content{
+>>>>>>> origin/main
 	width:80%;
 	margin: 0 auto;
 	font-family: 'SB_L';
@@ -104,7 +120,11 @@ body {
 
 h1 {
 	font-family: 'nunnu';
+<<<<<<< HEAD
     font-size: 30px;
+=======
+    font-size: 24px;
+>>>>>>> origin/main
     margin: 20px;
     color: #333333;
     font-weight: bold;

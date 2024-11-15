@@ -91,6 +91,7 @@ html, body {
     height: 140; /* Maintains the aspect ratio */
 }
 
+<<<<<<< HEAD
 /* 모달 스타일 */
 .modal {
     display: none; /* 초기에는 보이지 않도록 설정 */
@@ -125,6 +126,8 @@ html, body {
 .modal-btn:hover {
     background-color: #ddd;
 }
+=======
+>>>>>>> origin/main
 
 
 

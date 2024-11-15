@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 INDEX VERSION 1.4+C:\Users\user\Desktop\1115\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
 337713752.index
 2398219710.index
@@ -7,3 +8,13 @@ INDEX VERSION 1.4+C:\Users\user\Desktop\1115\.metadata\.plugins\org.eclipse.wst.
 2002156129.index
 1497857150.index
 1314155996.index
+=======
+INDEX VERSION 1.4+D:\project3_1114\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+2328203134.index
+2947586035.index
+3229877053.index
+4279904266.index
+2558119028.index
+1497857150.index
+337713752.index
+>>>>>>> origin/main

@@ -5,6 +5,7 @@ server:
     key-store-password: password123
     key-store-type: PKCS12
     key-alias: mylocalcert
+<<<<<<< HEAD
 
 eureka:
   client:
@@ -13,3 +14,5 @@ eureka:
 # SSL 인증서 검증을 비활성화하기 위한 설정 추가
       healthcheck:
        enabled: true
+=======
+>>>>>>> origin/main

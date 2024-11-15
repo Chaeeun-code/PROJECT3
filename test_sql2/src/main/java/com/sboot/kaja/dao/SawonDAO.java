@@ -44,12 +44,18 @@ public interface SawonDAO {
 
 	public List<CreditTransactionVO> getTransactionsWithFilters(@Param("filters") Map<String, Object> filters);
 	
+<<<<<<< HEAD
 	public void cancelinput(@Param("customerId") String customerId, 
             @Param("transactionDate") Timestamp transactionDate, 
             @Param("usedCredits") Integer usedCredits);
 
 	public int deletecancel(@Param("customerId") String customerId, 
             @Param("transactionDate") Timestamp transactionDate);
+=======
+	public void cancelinput(String customerId, Timestamp transactionDate, Integer usedCredits);
+
+	public int deletecancel(String customerId, Timestamp transactionDate);
+>>>>>>> origin/main
 
 	public List<CreditTransactionVO> getAllcancelTransactions();
 

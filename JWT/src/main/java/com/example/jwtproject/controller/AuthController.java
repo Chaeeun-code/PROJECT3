@@ -41,8 +41,14 @@ public class AuthController {
     public ResponseEntity<LoginResponse> login(@RequestBody LoginRequest loginRequest,
                                                HttpServletRequest request,
                                                HttpServletResponse response) {
+<<<<<<< HEAD
         System.out.println("로그인 요청 수행");
 
+=======
+    	
+    	System.out.println("로그인 요청 수행");
+    	
+>>>>>>> origin/main
         String username = loginRequest.getUsername();
         String clientIp = IPUtils.getClientIP(request);
 
@@ -59,17 +65,29 @@ public class AuthController {
             }
 
             // 3. 중복 세션이 없는 경우에만 JWT 및 Refresh Token 생성
+<<<<<<< HEAD
             String token = authService.generateJwtToken(username);  // 추가 정보 포함한 JWT 생성
+=======
+            String token = authService.generateJwtToken(username);
+>>>>>>> origin/main
             String refreshToken = authService.generateRefreshToken(username, clientIp);
 
             // 리프레시 토큰을 DB에 저장
             System.out.println(username + refreshToken + clientIp);
             authService.saveRefreshToken(username, refreshToken, clientIp);
 
+<<<<<<< HEAD
             // 클라이언트에 리프레시 토큰을 쿠키로 설정
             response.addHeader("Set-Cookie",
                     "refreshToken=" + refreshToken + "; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=" + (7 * 24 * 60 * 60));
 
+=======
+         // 클라이언트에 리프레시 토큰을 쿠키로 설정
+            response.addHeader("Set-Cookie",
+                    "refreshToken=" + refreshToken + "; Path=/; HttpOnly; Secure; SameSite=Lax; Max-Age=" + (7 * 24 * 60 * 60));
+
+
+>>>>>>> origin/main
             return ResponseEntity.ok(new LoginResponse(token));
 
         } catch (RuntimeException e) {
@@ -82,8 +100,34 @@ public class AuthController {
 
 
 
+<<<<<<< HEAD
     @PostMapping("/refresh")
     public ResponseEntity<?> refresh(HttpServletRequest request, HttpServletResponse response) {
+=======
+    @PostMapping("/expire")
+    public ResponseEntity<Void> expireSession(HttpServletRequest request,
+                                              @RequestBody ExpireSessionRequest expireSessionRequest) {
+        String oneTimeToken = expireSessionRequest.getOneTimeToken();
+        String username = expireSessionRequest.getUsername();
+
+        // 일회성 토큰을 검증
+        if (authService.validateOneTimeToken(username, oneTimeToken, request)) {  // DB에서 검증
+            // 기존 세션을 만료
+            authService.invalidateExistingTokens(username);
+            return ResponseEntity.ok().build();
+        } else {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED)
+                    .build();
+        }
+    }
+
+
+
+
+    @PostMapping("/refresh")
+    public ResponseEntity<?> refresh(HttpServletRequest request, HttpServletResponse response) {
+        // 클라이언트 IP 주소 가져오기
+>>>>>>> origin/main
         String clientIp = IPUtils.getClientIP(request);
         System.out.println("클라이언트 IP: " + clientIp);
 
@@ -111,6 +155,7 @@ public class AuthController {
             authService.validateRefreshToken(refreshToken, clientIp);
         } catch (RuntimeException e) {
             System.out.println("리프레시 토큰 검증 실패: " + e.getMessage());
+<<<<<<< HEAD
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Refresh token validation failed");
         }
 
@@ -120,6 +165,18 @@ public class AuthController {
         return ResponseEntity.ok(new LoginResponse(newToken));
     }
 
+=======
+            String refTokFail="Refresh token validation failed";
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(refTokFail);
+        }
+
+        // 리프레시 토큰이 유효한 경우 새로운 JWT 발급
+        String username = jwtProvider.getUsernameFromToken(refreshToken);
+        String newToken = jwtProvider.generateToken(username);
+        return ResponseEntity.ok(new LoginResponse(newToken));
+
+    }
+>>>>>>> origin/main
 
     
 
@@ -156,6 +213,7 @@ public class AuthController {
     }
     
     
+<<<<<<< HEAD
     @PostMapping("/expire")
     public ResponseEntity<Void> expireSession(HttpServletRequest request,
                                               @RequestBody ExpireSessionRequest expireSessionRequest) {
@@ -174,6 +232,8 @@ public class AuthController {
     }
     
     
+=======
+>>>>>>> origin/main
     @PostMapping("/logout")
     public ResponseEntity<String> logout(HttpServletRequest request, HttpServletResponse response) {
         String clientIp = IPUtils.getClientIP(request);

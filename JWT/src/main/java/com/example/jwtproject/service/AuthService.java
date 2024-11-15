@@ -1,16 +1,23 @@
 package com.example.jwtproject.service;
 
 import java.time.LocalDateTime;
+<<<<<<< HEAD
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+=======
+import java.util.List;
+>>>>>>> origin/main
 import java.util.UUID;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+<<<<<<< HEAD
 import com.example.jwtproject.dto.CompanyDetails;
 import com.example.jwtproject.dto.CustomerDetails;
+=======
+>>>>>>> origin/main
 import com.example.jwtproject.dto.LoginRequest;
 import com.example.jwtproject.mapper.RefreshTokenMapper;
 import com.example.jwtproject.mapper.UserMapper;
@@ -72,6 +79,7 @@ public class AuthService {
         return false;
     }
 
+<<<<<<< HEAD
     // 새로운 JWT 토큰 발급 (추가 사용자 정보 포함)
     public String generateJwtToken(String username) {
         // USERS 테이블에서 기본 사용자 정보 (username, role) 조회
@@ -107,15 +115,24 @@ public class AuthService {
         }
 
         return jwtProvider.generateToken(username, additionalClaims);
+=======
+    // 새로운 JWT 토큰 발급
+    public String generateJwtToken(String username) {
+        return jwtProvider.generateToken(username);
+>>>>>>> origin/main
     }
     
     // 사용자 인증
     public String authenticate(LoginRequest loginRequest) {
+<<<<<<< HEAD
     	  // USERS 테이블에서 사용자 조회
+=======
+>>>>>>> origin/main
         User user = userMapper.findByUsername(loginRequest.getUsername());
         if (user == null || !passwordEncoder.matches(loginRequest.getPassword(), user.getPassword())) {
             throw new RuntimeException("Invalid credentials");
         }
+<<<<<<< HEAD
 
         // 기본 정보만 담은 additionalClaims 생성
         Map<String, Object> additionalClaims = new HashMap<>();
@@ -124,6 +141,9 @@ public class AuthService {
 
         // JWT 토큰 생성 시 additionalClaims 포함하여 호출
         return jwtProvider.generateToken(user.getUsername(), additionalClaims);
+=======
+        return jwtProvider.generateToken(user.getUsername());
+>>>>>>> origin/main
     }
 
     // 중복된 세션이 있는지 확인
