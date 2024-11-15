@@ -4,6 +4,11 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 
+<<<<<<< HEAD
+import com.example.jwtproject.dto.CompanyDetails;
+import com.example.jwtproject.dto.CustomerDetails;
+=======
+>>>>>>> origin/main
 import com.example.jwtproject.model.User;
 
 @Mapper
@@ -13,6 +18,19 @@ public interface UserMapper {
     @Select("SELECT * FROM USERS WHERE username = #{username}")
     User findByUsername(@Param("username") String username);
 
+<<<<<<< HEAD
+    // CUSTOMER 테이블에서 사용자 세부 정보 조회
+    @Select("SELECT name, sex, tel, birth, email, address FROM customer WHERE customer_id = #{username}")
+    CustomerDetails findCustomerDetails(@Param("username") String username);
+
+    // COMPANY 테이블에서 회사 세부 정보 조회
+    @Select("SELECT name, brn, tel, email, address FROM company WHERE company_id = #{username}")
+    CompanyDetails findCompanyDetails(@Param("username") String username);
+    
+    
+    
+=======
+>>>>>>> origin/main
     // 사용자 저장
     void save(User user);
 }

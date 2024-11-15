@@ -20,10 +20,17 @@ public class GatewayConfig {
 	            .path("/jwt/**")
 	            .uri("https://localhost:8030")) // 백엔드 서버 주소
 
+<<<<<<< HEAD
+//	        .route("api_route_1", r -> r
+//	            .path("/**")
+//	            .and().host("example1.com")  // 예시: 다른 조건 추가
+//	            .uri("https://localhost:8380"))
+=======
 	        .route("api_route_1", r -> r
 	            .path("/api/**")
 	            .and().host("example1.com")  // 예시: 다른 조건 추가
 	            .uri("https://localhost:8380"))
+>>>>>>> origin/main
 
 	        .route("api_route_2", r -> r
 	            .path("/api/**")

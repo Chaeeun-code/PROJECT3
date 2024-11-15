@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- <mapper namespace="mapper.mybatismapper"> -->
+<mapper namespace="com.test.sqlimage.mapper.thingMapper">
+
+<select id="getAllInfo" resultType="com.test.sqlimage.vo.thingVo">
+	SELECT * FROM thing
+</select>
+
+<select id="getInfo" resultType="com.test.sqlimage.vo.thingVo">
+	SELECT * FROM thing where thing_id = #{thing_id}
+</select>
+
+<insert id="inputcart">
+    INSERT INTO cart (customer_id, thing_id, num, price, name, image_path)
+    VALUES (#{customer_id}, #{thing_id}, #{num}, #{price}, #{name}, #{image_path})
+</insert> 
+
+
+
+<select id="selectcart" resultType="com.test.sqlimage.vo.cartVo">
+	SELECT * FROM cart 
+	WHERE customer_id = #{customer_id} AND thing_id = #{thing_id}
+</select>
+
+<update id="updatecart" parameterType="com.test.sqlimage.vo.cartVo">
+        UPDATE cart
+        SET num = #{num}, price = #{price}
+        WHERE customer_id = #{customer_id} AND thing_id = #{thing_id}
+</update>
+
+<select id="getcartlist" resultType="com.test.sqlimage.vo.cartVo">
+	SELECT * FROM cart where customer_id = #{customer_id}
+</select>
+
+
+<delete id="deletecart">
+	DELETE FROM cart
+	WHERE customer_id = #{customer_id} AND thing_id = #{thing_id}
+</delete>
+
+
+
+
+<insert id="insertThing" parameterType="com.test.sqlimage.vo.thingVo">
+    INSERT INTO thing (thing_id, company_id, name, price, num, explain, image_path)
+    VALUES (#{thing_id}, #{company_id}, #{name}, #{price}, #{num}, #{explain}, #{image_path, jdbcType=VARCHAR})
+</insert>
+
+<select id="getCartItemByThingId" parameterType="String" resultType="com.test.sqlimage.vo.cartVo">
+    SELECT * FROM cart 
+    WHERE thing_id = #{thing_id} AND customer_id = #{customer_id}
+</select>
+
+
+<insert id="insertChart">
+	INSERT INTO chart (thing_id, name, click_count, man, woman, teenager, middleaged, elseage)
+	VALUES (#{thing_id}, #{name}, 0, 0, 0, 0, 0, 0)
+</insert>
+
+
+
+
+ 
+
+    
+
+</mapper>

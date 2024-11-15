@@ -1,3 +1,15 @@
+<<<<<<< HEAD
+/* 상단 네비게이션 바 스타일 */
+
+@font-face {
+    font-family: 'SnowflakeFont'; /* SMUSnowflake-Bold.ttf 폰트 */
+    src: url('/font/SMUSnowflake-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+=======
+>>>>>>> origin/main
 @font-face {
     font-family: 'nunnu'; 
      src: url('https://res.cloudinary.com/dhuybxduy/raw/upload/v1731058096/NoonnuBasicGothicRegular_mh9o3w.ttf') format('truetype');
@@ -18,6 +30,16 @@
     font-style: normal;
 }
 
+<<<<<<< HEAD
+
+html, body {
+	background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+=======
+>>>>>>> origin/main
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -30,7 +52,12 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     z-index: 1000;
     box-sizing: border-box;
+<<<<<<< HEAD
+   height: 50px;
+   transition: background-color 0.3s ease; /* 배경색이 부드럽게 전환되도록 설정 */
+=======
 	height: 50px;
+>>>>>>> origin/main
 }
 
 /* 네비게이션 링크 스타일 */
@@ -43,9 +70,17 @@
 
 .navbar .nav-links a {
     text-decoration: none;
+<<<<<<< HEAD
+    margin: 0 20px;
+    color: #000000;
+    font-size: 20px;
+    font-family: 'nunnu', sans-serif; /* go_L 폰트 적용 */
+    transition: color 0.3s ease; /* 글자 색 전환이 부드럽게 */
+=======
     margin: 0 10px;
     color: #000000;
     font-size: 16px;
+>>>>>>> origin/main
 }
 
 /* 인증 버튼 스타일 */
@@ -57,11 +92,26 @@
 
 .navbar .auth-buttons button {
     padding: 5px 10px;
+<<<<<<< HEAD
+    font-size: 15px;
+    font-family: 'nunnu', sans-serif; /* go_L 폰트 적용 */
+=======
     font-size: 16px;
+>>>>>>> origin/main
     cursor: pointer;
     border: 1px solid #000000;
     background-color: #ffffff;
     white-space: nowrap; /* 버튼 텍스트가 줄바꿈되지 않도록 설정 */
+<<<<<<< HEAD
+    border-radius: 15px; /* 모서리를 둥글게 설정 */
+    transition: background-color 0.3s, color 0.3s; /* 부드러운 전환 효과 추가 */
+}
+
+.navbar .auth-buttons button:hover {
+    background-color: #D0F5BE; /* 마우스가 올라가면 배경색을 녹색으로 변경 */
+    color: white; /* 텍스트 색상을 흰색으로 변경 */
+=======
+>>>>>>> origin/main
 }
 
 .logo img {
@@ -69,6 +119,44 @@
     height: 140; /* Maintains the aspect ratio */
 }
 
+<<<<<<< HEAD
+/* 모달 스타일 */
+.modal {
+    display: none; /* 초기에는 보이지 않도록 설정 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.modal-btn {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-btn:hover {
+    background-color: #ddd;
+}
+
+/*---------------------------------------------------------*/
+=======
 /*---------------------------------------------------------*/
 body {
     font-family: Arial, sans-serif;
@@ -77,18 +165,47 @@ body {
     background-color: rgb(255, 255, 255); /* 연한 파란색 배경 */
     padding-top: 55px;
 }
+>>>>>>> origin/main
 
 
 .top {
 	width: 100%;
    	background-color: #dae8fc;
+<<<<<<< HEAD
+	
+=======
    	padding: 70px; 
+>>>>>>> origin/main
 }
 
 .top-content{
 	width:80%;
 	margin: 0 auto;
+<<<<<<< HEAD
+	padding-top: 70px;
+}
+hr{
+	height: 1px;          /* 선을 얇게 만듦 */
+	opacity: 0.5;         /* 선을 연하게 만듦 */
+}
+
+.top-content hr, .line hr{
+	height: 1px; 
+	opacity: 1; 
+}
+
+h1 {
+	font-family: 'nunnu'; 
+    font-size: 30px;
+    margin: 20px;
+    color: #333333;
+    font-weight: bold;
+}
+p{
+	font-family: 'nunnu';  
+=======
 	font-family: 'SB_L';
+>>>>>>> origin/main
 }
 
 .container {
@@ -97,6 +214,21 @@ body {
 
 }
 
+<<<<<<< HEAD
+.container h2{
+	font-family: 'nunnu';
+	font-size: 18px;
+}
+
+.order-section {
+	font-family: 'nunnu'; 
+	font-size: 16px;
+   	display: flex;
+   	flex-direction: column;
+   	justify-content: space-between;   
+   	flex-wrap: wrap;
+}
+=======
 
 .back{
    background-color:transparent;
@@ -118,19 +250,27 @@ body {
    flex-wrap: wrap;
 }
 
+>>>>>>> origin/main
 .product-placeholder{
    float:left;
    width: 150px;
    height: 150px;
    margin-left: 10px;
 }
+<<<<<<< HEAD
+
+=======
+>>>>>>> origin/main
 .product-image{
    flex-direction:column;
    justify-content: center;
 }
 
 .quantity-count {
+<<<<<<< HEAD
+=======
 
+>>>>>>> origin/main
     margin-left: 80%;
     gap: 10px;
 }
@@ -140,19 +280,32 @@ body {
    gap: 10px;
 }
 
+<<<<<<< HEAD
+.shipping-section h2, .discount-section h2, .payment-section h2{ 
+	font-size: 30px;
+=======
 .quantity-section select {
     padding: 5px;
 }
 
 .shipping-section h2{
+>>>>>>> origin/main
    margin-top:70px;
 }
 
 .discount-section button{
+<<<<<<< HEAD
+	font-family: 'SB_L';
+=======
+>>>>>>> origin/main
    width: 200px;
 }
 
 .shipping-section, .discount-section, .payment-section {
+<<<<<<< HEAD
+	font-family: 'nunnu'; 
+=======
+>>>>>>> origin/main
     margin-top: 30px;
 }
 
@@ -186,11 +339,19 @@ body {
 }
 
 .button-section {
+<<<<<<< HEAD
+	font-family: 'nunnu'; 
+=======
+>>>>>>> origin/main
     text-align: center;
     margin-top: 30px;
 }
 
 .discount-section button,.button-section button {
+<<<<<<< HEAD
+	font-family: 'SB_L';
+=======
+>>>>>>> origin/main
     padding: 10px 20px;
     background-color: black;
     color: white;

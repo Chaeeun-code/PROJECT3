@@ -137,6 +137,23 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+<<<<<<< HEAD
+// JWT 토큰에서 페이로드를 파싱하는 함수
+function parseJwt(token) {
+    const base64Url = token.split('.')[1];
+    const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+    const jsonPayload = decodeURIComponent(
+        atob(base64)
+            .split('')
+            .map((c) => '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2))
+            .join('')
+    );
+    return JSON.parse(jsonPayload);
+}
+
+// 로그인 요청 함수
+=======
+>>>>>>> origin/main
 function login(event) {
     if (event) event.preventDefault();
 
@@ -159,7 +176,11 @@ function login(event) {
     .then(response => {
         if (response.status === 200) {
             // 중복 세션이 없는 경우, 로그인 성공 처리
+<<<<<<< HEAD
+            return response.json().then(data => handleLoginSuccess(data, saveId, autoLogin));
+=======
             return response.json().then(data => handleLoginSuccess(data, username, saveId, autoLogin));
+>>>>>>> origin/main
         } else if (response.status === 409) {
             // 중복 세션이 있는 경우, 사용자에게 알림
             return response.json().then(data => {
@@ -210,7 +231,11 @@ function expireSessionAndRetryLogin(username, payload, saveId, autoLogin) {
             })
             .then(loginResponse => {
                 if (loginResponse.status === 200) {
+<<<<<<< HEAD
+                    return loginResponse.json().then(data => handleLoginSuccess(data, saveId, autoLogin));
+=======
                     return loginResponse.json().then(data => handleLoginSuccess(data, username, saveId, autoLogin));
+>>>>>>> origin/main
                 } else {
                     throw new Error("재로그인 중 오류가 발생했습니다.");
                 }
@@ -225,6 +250,39 @@ function expireSessionAndRetryLogin(username, payload, saveId, autoLogin) {
 }
 
 // 로그인 성공 시 토큰 처리 및 리다이렉트 공통 함수
+<<<<<<< HEAD
+function handleLoginSuccess(data, saveId, autoLogin) {
+    console.log("Final token data:", data);
+    if (data.token) {
+        // 액세스 토큰 저장
+        localStorage.setItem("accessToken", data.token);
+
+        // 토큰에서 페이로드 정보를 파싱하여 세션 스토리지에 저장
+        const payload = parseJwt(data.token);
+        sessionStorage.setItem("username", payload.username); // 공통으로 저장
+
+        // role 값에 따라 분기하여 다른 정보 저장
+        if (payload.role === "customer") {
+            sessionStorage.setItem("role", payload.role);
+            sessionStorage.setItem("name", payload.name);
+            sessionStorage.setItem("sex", payload.sex);
+            sessionStorage.setItem("tel", payload.tel);
+            sessionStorage.setItem("birth", payload.birth);
+            sessionStorage.setItem("email", payload.email);
+            sessionStorage.setItem("address", payload.address);
+        } else if (payload.role === "company") {
+            sessionStorage.setItem("role", payload.role);
+            sessionStorage.setItem("name", payload.name);
+            sessionStorage.setItem("brn", payload.brn);  // 사업자 등록 번호
+            sessionStorage.setItem("tel", payload.tel);
+            sessionStorage.setItem("email", payload.email);
+            sessionStorage.setItem("address", payload.address);
+        }
+
+        // 사용자 설정에 따라 아이디 저장 옵션 적용
+        if (saveId) {
+            localStorage.setItem("savedUsername", payload.username);
+=======
 function handleLoginSuccess(data, username, saveId, autoLogin) {
     console.log("Final token data:", data);
     if (data.token) {
@@ -233,10 +291,15 @@ function handleLoginSuccess(data, username, saveId, autoLogin) {
 
         if (saveId) {
             localStorage.setItem("savedUsername", username);
+>>>>>>> origin/main
         } else {
             localStorage.removeItem("savedUsername");
         }
 
+<<<<<<< HEAD
+        // 자동 로그인 설정 저장
+=======
+>>>>>>> origin/main
         if (autoLogin) {
             localStorage.setItem("autoLogin", "true");
         } else {

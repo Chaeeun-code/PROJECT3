@@ -191,7 +191,11 @@
        $.ajax({
        url: 'https://localhost:8888/api/customers/list', 
        type: 'GET',
+<<<<<<< HEAD
+       data: { name: username },
+=======
        data: { name: 'C001' },
+>>>>>>> origin/main
        contentType: 'application/json',
        success: function(customer) {
            document.getElementById('name').value  = customer.name;
@@ -221,7 +225,11 @@
            url: 'https://localhost:8888/api/customers/updateInfo', 
            type: 'PUT',
            contentType: 'application/json',
+<<<<<<< HEAD
+           data: JSON.stringify({customer_id: username, name: newName}),
+=======
            data: JSON.stringify({customer_id: customerId, name: newName}),
+>>>>>>> origin/main
            success: function(response) {
                alert("이름이 성공적으로 변경되었습니다.");
            },

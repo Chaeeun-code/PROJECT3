@@ -38,3 +38,18 @@ jwt:
 vault:
   secret-path: secret/data/jwt-project        # secret 데이터 접근 경로 (key/value 버전 2에서 /data/ 추가)
 
+<<<<<<< HEAD
+eureka:
+    client:
+      service-url:
+        defaultZone: http://localhost:8761/eureka/
+      instance:
+        ecurePortEnabled: true
+    instance:
+      prefer-ip-address: true
+    ssl:
+      enabled: true
+      validate-certs: false  # SSL 인증서 검증 비활성화
+
+=======
+>>>>>>> origin/main

@@ -9,6 +9,29 @@
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+<<<<<<< HEAD
+       <div class="navbar">
+           <div class="logo">
+            <a href="${pageContext.request.contextPath}/index">
+               <img src="https://res.cloudinary.com/dhuybxduy/image/upload/v1730854684/logo_odbfxc.png" alt="logo" id="logo-image">
+            </a>
+           </div>
+           <div class="nav-links">
+               <a href="${pageContext.request.contextPath}/campaign_main">참여활동</a>
+               <a href="#">회사소개</a>
+               <a href="${pageContext.request.contextPath}/shop_main">eco 쇼핑</a>
+               <a href="#">참여방법</a>
+           </div>
+           <div class="auth-buttons">
+            <a href="#">
+               <button class="signup-btn">sign up</button>
+            </a>
+            <a href="#">
+               <button class="login-btn" onclick="location.href='https://localhost:8443/login'">log in</button>
+            </a>
+           </div>
+       </div>
+=======
     <div class="navbar">
         <div class="logo">
             <a href="${pageContext.request.contextPath}/index">
@@ -26,6 +49,7 @@
             <a href="#"><button class="login-btn">log in</button></a>
         </div>
     </div>
+>>>>>>> origin/main
 	
     <!-- 상품 상세 정보 영역 -->
 	<div class="container">
@@ -74,6 +98,74 @@
 		</div>
 	</div>	
 	
+<<<<<<< HEAD
+	         <script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const authButtons = document.querySelector('.auth-buttons');
+        const accessToken = localStorage.getItem("accessToken") || sessionStorage.getItem("accessToken");
+        const savedUsername = localStorage.getItem("savedUsername") || sessionStorage.getItem("username");
+        console.log("저장된 사용자 이름:", savedUsername);
+        if (savedUsername) {
+        	console.log("로그인 상태입니다.");
+            // 로그인 상태일 경우: sign up 및 log in 버튼 숨기고 장바구니와 사용자 아이디 표시
+            authButtons.innerHTML =
+                '<a href="${pageContext.request.contextPath}/shop_cart">' +
+                    '<button class="cart-btn">장바구니</button>' +
+                '</a>' +
+                '<a href="${pageContext.request.contextPath}/mypage">' +
+                '<button class="cart-btn">' + savedUsername + '님</button>' +
+            	'</a>';               
+        }else {
+            // 비로그인 상태일 경우 아무것도 하지 않음 (기본 상태 유지)
+            console.log("비로그인 상태입니다.");
+        }
+    });
+</script>
+
+<script>
+   // 세션 스토리지에서 role 값 가져오기
+               const username = sessionStorage.getItem("username");
+               const role = sessionStorage.getItem("role");
+
+               if (role === "customer") {
+                   // role이 'customer'인 경우 필요한 값들을 세션 스토리지에서 가져옴
+                   const name = sessionStorage.getItem("name");
+                   const sex = sessionStorage.getItem("sex");
+                   const tel = sessionStorage.getItem("tel");
+                   const birth = sessionStorage.getItem("birth");
+                   const email = sessionStorage.getItem("email");
+                   const address = sessionStorage.getItem("address");
+
+                   console.log("Customer 정보:");
+                   console.log("이름:", name);
+                   console.log("성별:", sex);
+                   console.log("전화번호:", tel);
+                   console.log("생년월일:", birth);
+                   console.log("이메일:", email);
+                   console.log("주소:", address);
+
+               } else if (role === "company") {
+                   // role이 'company'인 경우 필요한 값들을 세션 스토리지에서 가져옴
+                   const name = sessionStorage.getItem("name");
+                   const brn = sessionStorage.getItem("brn");  // 사업자 등록 번호
+                   const tel = sessionStorage.getItem("tel");
+                   const email = sessionStorage.getItem("email");
+                   const address = sessionStorage.getItem("address");
+
+                   console.log("Company 정보:");
+                   console.log("회사명:", name);
+                   console.log("사업자 등록 번호:", brn);
+                   console.log("전화번호:", tel);
+                   console.log("이메일:", email);
+                   console.log("주소:", address);
+
+               } else {
+                   console.log("role이 'customer' 또는 'company'가 아닙니다.");
+               }
+               </script>
+	
+=======
+>>>>>>> origin/main
     <script>
         // 페이지가 로드되면 상품 정보를 불러옵니다.
         document.addEventListener("DOMContentLoaded", function() {
@@ -153,7 +245,11 @@
 				url: 'https://localhost:8588/api/products/cart',
 				method: 'POST',
 				contentType: 'application/json',
+<<<<<<< HEAD
+				data: JSON.stringify({customer_id:username ,thing_id: productId, price:price, num:count, name:name,
+=======
 				data: JSON.stringify({customer_id:'C001' ,thing_id: productId, price:price, num:count, name:name,
+>>>>>>> origin/main
 			image_path: image_path}),
 				success: function() {
 					document.querySelector(".modal").style.display = "block";

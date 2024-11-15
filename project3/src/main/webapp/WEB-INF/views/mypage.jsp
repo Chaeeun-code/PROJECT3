@@ -120,6 +120,10 @@
 		          $.ajax({
 		              url: 'https://localhost:8587/api/customer_info',
 		              method: 'GET',
+<<<<<<< HEAD
+		              data: { customer_id: username },
+=======
+>>>>>>> origin/main
 		              contentType: 'application/json',
 		              success: function(response) {
 		                  console.log('사용자 정보 응답:', response); // 응답 출력
@@ -135,13 +139,21 @@
 		          
 		          
 		       // 주문 이력 요청 직전 로그 출력
+<<<<<<< HEAD
+	// 여기 추가
+=======
 		          console.log("주문 이력 요청 URL:", 'https://localhost:8587/api/order_history?customerId=C001'); // 여기 추가
+>>>>>>> origin/main
 		          
 		          // 주문 이력 AJAX 요청
 		          $.ajax({
 		              url: 'https://localhost:8587/api/order_history',
 		              method: 'GET',
+<<<<<<< HEAD
+		              data: { customerId: username },
+=======
 		              data: { customerId: 'C001' },
+>>>>>>> origin/main
 		              contentType: 'application/json',
 		              success: function(response) {
 		                  console.log('주문 이력 응답:', response);
@@ -199,6 +211,50 @@
 	        }
 	    });
 	</script>
+<<<<<<< HEAD
+	<script>
+	   // 세션 스토리지에서 role 값 가져오기
+               const username = sessionStorage.getItem("username");
+               const role = sessionStorage.getItem("role");
+
+               if (role === "customer") {
+                   // role이 'customer'인 경우 필요한 값들을 세션 스토리지에서 가져옴
+                   const name = sessionStorage.getItem("name");
+                   const sex = sessionStorage.getItem("sex");
+                   const tel = sessionStorage.getItem("tel");
+                   const birth = sessionStorage.getItem("birth");
+                   const email = sessionStorage.getItem("email");
+                   const address = sessionStorage.getItem("address");
+
+                   console.log("Customer 정보:");
+                   console.log("이름:", name);
+                   console.log("성별:", sex);
+                   console.log("전화번호:", tel);
+                   console.log("생년월일:", birth);
+                   console.log("이메일:", email);
+                   console.log("주소:", address);
+
+               } else if (role === "company") {
+                   // role이 'company'인 경우 필요한 값들을 세션 스토리지에서 가져옴
+                   const name = sessionStorage.getItem("name");
+                   const brn = sessionStorage.getItem("brn");  // 사업자 등록 번호
+                   const tel = sessionStorage.getItem("tel");
+                   const email = sessionStorage.getItem("email");
+                   const address = sessionStorage.getItem("address");
+
+                   console.log("Company 정보:");
+                   console.log("회사명:", name);
+                   console.log("사업자 등록 번호:", brn);
+                   console.log("전화번호:", tel);
+                   console.log("이메일:", email);
+                   console.log("주소:", address);
+
+               } else {
+                   console.log("role이 'customer' 또는 'company'가 아닙니다.");
+               }
+               </script>
+=======
+>>>>>>> origin/main
     
 
     </div>

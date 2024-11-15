@@ -29,8 +29,14 @@ function requestPay(paymentData) {
 		if (rsp.success) {
 			// POST 방식으로 성공 페이지로 리다이렉트
 			alert("결제에 성공하였습니다");
+<<<<<<< HEAD
+			console.log(tel);
+			$.ajax({
+			    url: "https://localhost:8380/payment/success",  // 전체 URL 확인
+=======
 			$.ajax({
 			    url: "http://localhost:8380/payment/success",  // 전체 URL 확인
+>>>>>>> origin/main
 			    type: "POST",
 			    data: {
 			        transaction_id: rsp.merchant_uid,
@@ -45,11 +51,25 @@ function requestPay(paymentData) {
 			    },
 			    success: function(response) {
 			        console.log("결제 성공:", response);
+<<<<<<< HEAD
+			        window.location.href = "https://localhost:8443/index";  // 성공 시 메인 페이지로 이동
+			    },
+				error: function(xhr, status, error) {
+				    console.error("결제 요청 실패:", {
+				        status: xhr.status,
+				        statusText: xhr.statusText,
+				        responseText: xhr.responseText,
+				        error: error
+				    });
+				}
+
+=======
 			        window.location.href = "http://localhost:8080/index";  // 성공 시 메인 페이지로 이동
 			    },
 			    error: function(xhr, status, error) {
 			        console.error("결제 요청 실패:", xhr.responseText);
 			    }
+>>>>>>> origin/main
 			});
 			
 		

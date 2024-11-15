@@ -29,7 +29,14 @@
         <version>20230618</version>
       </dependency>
    
+<<<<<<< HEAD
+   <dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+</dependency>
+=======
    
+>>>>>>> origin/main
    
       <dependency>
          <groupId>org.springframework.boot</groupId>

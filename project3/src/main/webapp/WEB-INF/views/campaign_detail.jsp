@@ -70,7 +70,53 @@
 				            <button type="button" id="verifyButton">인증</button>
 				        </form>
 				    </div>
+<<<<<<< HEAD
+				<script>
+				   // 세션 스토리지에서 role 값 가져오기
+	               const username = sessionStorage.getItem("username");
+	               const role = sessionStorage.getItem("role");
 
+	               if (role === "customer") {
+	                   // role이 'customer'인 경우 필요한 값들을 세션 스토리지에서 가져옴
+	                   const name = sessionStorage.getItem("name");
+	                   const sex = sessionStorage.getItem("sex");
+	                   const tel = sessionStorage.getItem("tel");
+	                   const birth = sessionStorage.getItem("birth");
+	                   const email = sessionStorage.getItem("email");
+	                   const address = sessionStorage.getItem("address");
+
+	                   console.log("Customer 정보:");
+	                   console.log("이름:", name);
+	                   console.log("성별:", sex);
+	                   console.log("전화번호:", tel);
+	                   console.log("생년월일:", birth);
+	                   console.log("이메일:", email);
+	                   console.log("주소:", address);
+
+	               } else if (role === "company") {
+	                   // role이 'company'인 경우 필요한 값들을 세션 스토리지에서 가져옴
+	                   const name = sessionStorage.getItem("name");
+	                   const brn = sessionStorage.getItem("brn");  // 사업자 등록 번호
+	                   const tel = sessionStorage.getItem("tel");
+	                   const email = sessionStorage.getItem("email");
+	                   const address = sessionStorage.getItem("address");
+
+	                   console.log("Company 정보:");
+	                   console.log("회사명:", name);
+	                   console.log("사업자 등록 번호:", brn);
+	                   console.log("전화번호:", tel);
+	                   console.log("이메일:", email);
+	                   console.log("주소:", address);
+
+	               } else {
+	                   console.log("role이 'customer' 또는 'company'가 아닙니다.");
+	               }
+				
+				
+				</script>
+=======
+
+>>>>>>> origin/main
                  
                  <script>
                     // 페이지 로드 시 고객 정보 로드
@@ -83,7 +129,11 @@
                          $.ajax({
                              url: 'https://localhost:8888/api/customers/list', 
                              type: 'GET',
+<<<<<<< HEAD
+                             data: { name: username },
+=======
                              data: { name: 'C001' },
+>>>>>>> origin/main
                              contentType: 'application/json',
                              success: function(customer) {
                                  document.getElementById('name').value  = customer.name;
@@ -102,7 +152,11 @@
 					        console.log("AJAX 요청 시작"); // 요청 시작 확인
 					        
 					        const formData = new FormData();
+<<<<<<< HEAD
+					        formData.append('customer_id', username); 
+=======
 					        formData.append('customer_id', 'C001'); // customer_id는 C001로 고정
+>>>>>>> origin/main
 					        
 					        const fileInput = $('input[name="uploadFile"]')[0];
 					        if (fileInput.files.length > 0) {

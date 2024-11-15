@@ -45,6 +45,13 @@
 		    <artifactId>spring-boot-starter-tomcat</artifactId>
 		</dependency>
 
+<<<<<<< HEAD
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+</dependency>
+=======
+>>>>>>> origin/main
 
 
         <!-- 테스트 의존성 -->
